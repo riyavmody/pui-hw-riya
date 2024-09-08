@@ -72,6 +72,6 @@ h2 {
 }
 
 /* Highlighting navigation headers on hover*/
-h2:hover {
+h2:hover, button:hover {
     background-color: yellow;    
 }
