@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Detail</title>
+    <link href="css/hw1.css" rel="stylesheet" type="text/css">
+  
+  </head>
+    
+  <body>
+    <!-- Logo -->
+    <img id="logo" src="./assets/logo/logo-01.svg" alt="Bun Bun Bake shop logo">
+
+  
+    <hr> <!-- Line divider -->
+
+    <div class="content"> <!-- Navigation and headers -->
+      <nav>
+        <h2 id="products"><a href="./products.html">PRODUCTS</a></h2>
+        <h2 id="cart"><a href="./cart.html">CART</a></h2>
+      </nav>
+      <br>
+    </div>
+      
+    <div class="content"> <!-- Detail section -->
+      <p>Original cinnamon roll</p>
+      <img id="detail-image" src="/Users/riyamody/Documents/mhci/pui/GitHub/pui-hw-riya/assets/products/original-cinnamon-roll.jpg" alt="Original cinnamon roll">  
+    </div>
+
+    <div class="options"> <!-- Customization -->
+      <p>Customize our delicious hand-made cinnamon roll to your liking</p>
+
+      <!-- Glazing select tag -->
+      <p>Glazing:</p>
+      <select name="glaze" id="glaze">
+        <option value="original">Keep original</option>
+        <option value="sugar">Sugar milk</option>
+        <option value="vanilla">Vanilla milk</option>
+        <option value="chocolate">Double chocolate</option>
+      </select>
+
+      <br>
+      <br>
+
+      <!-- Pack size select tag -->
+
+      <p>Pack size:</p>
+      <select name="size" id="size">
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="6">6</option>
+        <option value="12">12</option>
+      </select>
+    </div>
+
+    <br>
+    
+    <div class="content">
+      <p id="add-button"><em>$2.49</em></p>
+      <button type="button">Add to cart</button>
+    </div>
+
+  </body>
+
+</html>
