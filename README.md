@@ -1,5 +1,5 @@
 # PUI homework
 
-Deployed website: `add the URL to your deployed website`
+Deployed website: https://riyavmody.github.io/pui-hw-riya/
 
-Repository link: `add the URL to this repository`
+Repository link: https://github.com/riyavmody/pui-hw-riya/
