@@ -59,11 +59,13 @@ hr {
     display: inline; /* Source: https://forum.freecodecamp.org/t/how-to-make-p-tag-and-a-button-side-by-side/277313/7 */
 }
 
+/* Removing default link styling */
 a {
     text-decoration: none;
     color: black;
 }
 
+/* Adjusting header styles to highlight only text */
 h2 {
     padding: 5px;
     max-width: fit-content;
