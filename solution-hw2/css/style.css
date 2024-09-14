@@ -1,18 +1,24 @@
 /* Adjusting logo size*/
 #logo {
+    display: flex;
+    align-items: center; 
+    margin-right: 25px;
     width: 400px;
 }
 
 /* Formatting product page images*/
 .product-image {
-    width: 400px;
-    height: 400px;
+    width: 285px;
+    height: 285px;
     border: 2px solid #000000;
 }
 
 /* Adjusting header position*/
-.content {
-    text-align: center;
+#intro {
+    text-align: center; /* Align text to the left */
+    font-size: 24px; /* Adjust the font size to match the image */
+    padding-left: 25px; /* Add some left padding to align with the logo */
+    margin-top: 10px; /* Add some margin to adjust vertical spacing */
 }
 
 /* Formatting detail page images*/
@@ -30,13 +36,18 @@
 }
 
 /* Adding hover highlight interaction to content containers */
-.container:hover{
+.container:hover, .container #product-name:hover{
     background-color: yellow;   
 }
 
-/* Adding hover bold interaction to product name */
-.container:hover .product-name{
-    font-weight: bold; 
+/* Adding bold to product name on hover */
+.container:hover .product-name {
+    font-weight: bold;
+}
+
+/* Underlining product names */
+.product-name{
+    text-decoration: underline; 
 }
 
 /* Formatting content containers and option section */
@@ -49,7 +60,7 @@
 
 /* Making the line break thicker */
 hr {
-    width:100%;
+    width:300%;
     height:4px;
     background:#000;
 }
@@ -65,27 +76,41 @@ a {
     color: black;
 }
 
-/* Adjusting header styles to highlight only text */
-h2 {
-    padding: 5px;
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* Highlighting navigation headers on hover*/
-h2:hover, button:hover {
-    background-color: yellow;    
+#product-link:hover, #cart-link:hover, button:hover {
+    background-color: yellow; 
+    font-weight: bold;   
 }
 
+/* Changing all font to helvetica */
 body {
-    font-family: Helvetica, Sans-Serif;
+    font-family: Helvetica;
 }
 
+/* Aligning first three products */
+#products-row1 { 
+    display: flex;
+    justify-content: space-evenly;
+}
 
-/* 
-TO DO; 
-- bold and underline as needed 
-- width of images 
-- flexbox to align images to 3 per row 
-*/
+/* Aligning next three products */
+#products-row2 { 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Aligning logo, line and title */
+#logo-container { 
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Styling navigation bar https://www.w3schools.com/Css/css_navbar.asp */
+nav { 
+    position: absolute;
+    right: 0;
+    padding: 35px;
+    display: flex;
+    gap: 20px;
+}
