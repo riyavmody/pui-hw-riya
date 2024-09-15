@@ -1,3 +1,4 @@
+/* Flexbox source: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 /* Adjusting logo size*/
 #logo {
     display: flex;
@@ -15,10 +16,10 @@
 
 /* Adjusting header position*/
 #intro {
-    text-aleign: center; /* Align text to the left */
-    font-size: 24px; /* Adjust the font size to match the image */
-    padding-left: 25px; /* Add some left padding to align with the logo */
-    margin-top: 10px; /* Add some margin to adjust vertical spacing */
+    text-align: center;
+    font-size: 24px; 
+    padding-left: 25px; 
+    margin-top: 10px; 
 }
 
 /* Formatting detail page images*/
@@ -145,10 +146,11 @@ Source for centering: https://www.w3schools.com/css/css_align.asp */
     padding: 30px;
 }
 
+/* Aligning image and product details */
 .image-details {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 /* Specifying width of description box to space price and description relative to length of content */
@@ -156,6 +158,21 @@ Source for centering: https://www.w3schools.com/css/css_align.asp */
     width: 300px;
 }
 
-.full-detail {
-    align-items: left;
+/* Formatting remove button text */
+.remove {
+    font-weight: bold;
+    text-decoration: underline;
+    width: 100px;
+}
+
+/* Checkout alignment */
+#checkout {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Adjusting length of line on cart page */
+#cart-line {
+    width: 60%;
 }

@@ -35,29 +35,35 @@
     <!-- Cart list -->
     <div> 
 
-      <div class="full-detail">
+      <div class="full-details">
         <div class="image-details">
-          <img class="cart-image" src="../assets/products/original-cinnamon-roll.jpg" alt="Original cinnamon roll">  
-          
+          <div>
+            <img class="cart-image" src="../assets/products/original-cinnamon-roll.jpg" alt="Original cinnamon roll">  
+            <p class="remove">Remove</p>
+          </div>
+
           <div class="cart-details">
             <div class="description">
               <p>Original Cinnamon Roll</p>
               <p>Glazing: Keep original</p>
               <p>Pack size: 1</p>
             </div>
+
             <div>
               <p>$2.49</p>
             </div>
           </div>
 
         </div>
-        
-        <p>Remove</p>
+
       </div>  
       
       <div class="image-details">
-        <img class="cart-image" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="Original cinnamon roll">  
-        
+        <div>
+          <img class="cart-image" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="Original cinnamon roll">  
+          <p class="remove">Remove</p> 
+        </div>
+
         <div class="cart-details">
           <div class="description">
             <p>Double Chocolate Cinnamon Roll</p>
@@ -71,18 +77,24 @@
 
       </div>
 
-      <p>Remove</p> 
-
     </div>
-
-    <hr> <!-- Line divider -->
+    
+    <hr id="cart-line"> <!-- Line divider -->  
 
     <!-- Checkout button -->
-    <div> 
-      <p>Total: $29.94</p>
-      <button>Checkout</button>
-    </div>
+    <div id="checkout">
 
+      <div> 
+        <p>Total:</p>
+      </div>
+      
+      <div>
+        <p>$29.94</p>
+        <button>Checkout</button>
+      </div>
+      
+    </div>
+    
   </body>
 
 </html>
