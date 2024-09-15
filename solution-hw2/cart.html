@@ -6,34 +6,34 @@
     <meta charset="UTF-8">
     <title>Cart</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-  
   </head>
     
   <body>
-    <!-- Logo -->
-    <a href="./products.html">
-      <img id="logo" src="../assets/logo/logo-01.svg" alt="Bun Bun Bake shop logo">
-    </a>
-
-  
-    <hr> <!-- Line divider -->
-
+    
     <!-- Navigation and headers -->
-    <div class="content"> 
       <nav>
-        <h2 id="products"><a href="./products.html">PRODUCTS</a></h2>
-        <h2 id="cart"><a href="./cart.html">CART</a></h2>
-        <br> <!-- Line break -->
-        <h3>Shopping Cart</h3>
+        <a id="product-link" href="./products.html">PRODUCTS</a>
+        <a id="cart-link" href="./cart.html">CART</a>
       </nav>
 
-      <br>
+    <div id="logo-container">
+      <a href="./products.html"> <!-- Logo -->
+        <img id="logo" src="../assets/logo/logo-01.svg" alt="Bun Bun Bake shop logo">
+      </a>
 
-      <h3> Our handmade cinnamon rolls</h3>
+      <div>
+        <hr> <!-- Line divider -->
+        <br>
+        <div id="intro"> 
+          <p> Our hand-made cinnamon rolls </p>
+        </div>
+
+      </div>
+
     </div>
       
     <!-- Cart list -->
-    <div class="content"> 
+    <div> 
       <img class="cart-image" src="../assets/products/original-cinnamon-roll.jpg" alt="Original cinnamon roll">  
       <p>Remove</p>
       <p>Original Cinnamon Roll</p>
@@ -53,9 +53,9 @@
     <hr> <!-- Line divider -->
 
     <!-- Checkout button -->
-    <div class="content"> 
+    <div> 
       <p>Total: $29.94</p>
-      <button type="button">Checkout</button>
+      <button>Checkout</button>
     </div>
 
   </body>

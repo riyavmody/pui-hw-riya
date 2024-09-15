@@ -15,7 +15,7 @@
 
 /* Adjusting header position*/
 #intro {
-    text-align: center; /* Align text to the left */
+    text-aleign: center; /* Align text to the left */
     font-size: 24px; /* Adjust the font size to match the image */
     padding-left: 25px; /* Add some left padding to align with the logo */
     margin-top: 10px; /* Add some margin to adjust vertical spacing */
@@ -60,7 +60,7 @@
 
 /* Making the line break thicker */
 hr {
-    width:300%;
+    width:400%;
     height:4px;
     background:#000;
 }
@@ -68,6 +68,7 @@ hr {
 /* Formatting add button to be in line with price */
 #add-button {
     display: inline; /* Source: https://forum.freecodecamp.org/t/how-to-make-p-tag-and-a-button-side-by-side/277313/7 */
+    padding: 20px;
 }
 
 /* Removing default link styling */
@@ -108,9 +109,24 @@ body {
 
 /* Styling navigation bar https://www.w3schools.com/Css/css_navbar.asp */
 nav { 
+    font-size: 25px;
     position: absolute;
     right: 0;
     padding: 35px;
     display: flex;
-    gap: 20px;
+    gap: 100px;
+}
+
+/* Centering content in detail container and aligning with flexbox
+Source for centering: https://www.w3schools.com/css/css_align.asp */
+#detail-container {
+    margin: auto;
+    width: 50%;
+    align-items: center; 
+    display: flex;
+}
+
+#customization-container {
+    padding: 30px;
+    font-size: 20px;
 }
