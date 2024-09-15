@@ -126,7 +126,36 @@ Source for centering: https://www.w3schools.com/css/css_align.asp */
     display: flex;
 }
 
+/* Adding padding to button and price to increase space between image */
 #customization-container {
     padding: 30px;
     font-size: 20px;
+}
+
+/* Adding padding to price container to space out */
+.price {
+    padding: 100px;
+}
+
+/* Description and price alignment */
+.cart-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.image-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Specifying width of description box to space price and description relative to length of content */
+.description {
+    width: 300px;
+}
+
+.full-detail {
+    align-items: left;
 }
