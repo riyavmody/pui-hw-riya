@@ -1,0 +1,178 @@
+/* Flexbox source: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+/* Adjusting logo size*/
+#logo {
+    display: flex;
+    align-items: center; 
+    margin-right: 25px;
+    width: 400px;
+}
+
+/* Formatting product page images*/
+.product-image {
+    width: 285px;
+    height: 285px;
+    border: 2px solid #000000;
+}
+
+/* Adjusting header position*/
+#intro {
+    text-align: center;
+    font-size: 24px; 
+    padding-left: 25px; 
+    margin-top: 10px; 
+}
+
+/* Formatting detail page images*/
+#detail-image {
+    width: 600px;
+    height: 600px;
+    border: 2px solid #000000;
+}
+
+/* Formatting cart page images*/
+.cart-image {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000000;
+}
+
+/* Adding hover highlight interaction to content containers */
+.container:hover, .container #product-name:hover{
+    background-color: yellow;   
+}
+
+/* Adding bold to product name on hover */
+.container:hover .product-name {
+    font-weight: bold;
+}
+
+/* Underlining product names */
+.product-name{
+    text-decoration: underline; 
+}
+
+/* Formatting content containers and option section */
+.container, .options{
+    padding: 5px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Making the line break thicker */
+hr {
+    width:400%;
+    height:4px;
+    background:#000;
+}
+
+/* Formatting add button to be in line with price */
+#add-button {
+    display: inline; /* Source: https://forum.freecodecamp.org/t/how-to-make-p-tag-and-a-button-side-by-side/277313/7 */
+    padding: 20px;
+}
+
+/* Removing default link styling */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Highlighting navigation headers on hover*/
+#product-link:hover, #cart-link:hover, button:hover {
+    background-color: yellow; 
+    font-weight: bold;   
+}
+
+/* Changing all font to helvetica */
+body {
+    font-family: Helvetica;
+}
+
+/* Aligning first three products */
+#products-row1 { 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Aligning next three products */
+#products-row2 { 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Aligning logo, line and title */
+#logo-container { 
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Styling navigation bar https://www.w3schools.com/Css/css_navbar.asp */
+nav { 
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+    padding: 35px;
+    display: flex;
+    gap: 100px;
+}
+
+/* Centering content in detail container and aligning with flexbox
+Source for centering: https://www.w3schools.com/css/css_align.asp */
+#detail-container {
+    margin: auto;
+    width: 50%;
+    align-items: center; 
+    display: flex;
+}
+
+/* Adding padding to button and price to increase space between image */
+#customization-container {
+    padding: 30px;
+    font-size: 20px;
+}
+
+/* Adding padding to price container to space out */
+.price {
+    padding: 100px;
+}
+
+/* Description and price alignment */
+.cart-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Aligning image and product details */
+.image-details {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+/* Specifying width of description box to space price and description relative to length of content */
+.description {
+    width: 300px;
+}
+
+/* Formatting remove button text */
+.remove {
+    font-weight: bold;
+    text-decoration: underline;
+    width: 100px;
+}
+
+/* Checkout alignment */
+#checkout {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Adjusting length of line on cart page */
+#cart-line {
+    width: 60%;
+}
