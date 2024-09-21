@@ -54,7 +54,7 @@
 /* Formatting content containers and option section */
 .container, .options{
     padding: 5px;
-    max-width: fit-content;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -67,7 +67,7 @@ hr {
 }
 
 /* Formatting add button to be in line with price */
-#add-button {
+#total-price {
     display: inline; /* Source: https://forum.freecodecamp.org/t/how-to-make-p-tag-and-a-button-side-by-side/277313/7 */
     padding: 20px;
 }
@@ -175,4 +175,12 @@ Source for centering: https://www.w3schools.com/css/css_align.asp */
 /* Adjusting length of line on cart page */
 #cart-line {
     width: 60%;
+}
+
+/* Formatting dropdown selectors */
+select {
+    width: 300px;
+    padding: 7px;
+    border-width: 3px;
+    border-color: #000;
 }

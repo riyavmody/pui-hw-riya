@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <title>Detail</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/main.js" defer></script>
   
   </head>
     
@@ -46,12 +47,10 @@
         <br>
 
         <!-- Glazing select tag -->
+
         <p>Glazing:</p>
-        <select name="glaze" id="glaze">
-          <option value="original">Keep original</option>
-          <option value="sugar">Sugar milk</option>
-          <option value="vanilla">Vanilla milk</option>
-          <option value="chocolate">Double chocolate</option>
+        <select name="glaze" id="glaze"
+          onchange="glazingChange(this)">
         </select>
 
         <br> <!-- Line break -->
@@ -59,11 +58,8 @@
 
         <!-- Pack size select tag -->
         <p>Pack size:</p>
-        <select name="size" id="size">
-          <option value="1">1</option>
-          <option value="3">3</option>
-          <option value="6">6</option>
-          <option value="12">12</option>
+        <select name="size" id="size"
+          onchange="priceChange(this)">
         </select>
       </div>
 
@@ -74,7 +70,7 @@
       
       <!-- Add button -->
       <div>
-        <p id="add-button">$2.49</p>
+        <p id="total-price">$2.49</p>
         <button>Add to cart</button>
       </div>
     
