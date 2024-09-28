@@ -51,7 +51,7 @@ function populatePrice () {
 // Adjust price based on user selections
 function updatePrice () {
     // Assigning in vars 
-    const basePrice = 2.49;
+    const basePrice = currentRoll.basePrice;
     const glazeChangePrice = parseFloat(glazeOption.value);
     const packChangePrice = parseFloat(sizeOption.value);
 
