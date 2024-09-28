@@ -47,3 +47,34 @@ detailImage.src = currentRoll.imageFile; // Changing image source based on curre
 detailImage.alt = currentRoll.altText; // Changing image alt text based on current URL
 productTitle.textContent = rollType + ' cinnamon roll'; // Changing product title based on current URL 
 
+// Roll constructor
+class Roll {
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType;
+        this.glazing =  rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+    }
+}
+
+// Initializing cart array 
+const cart = [];
+
+// Getting select elements 
+const glazeOptionSelect = document.getElementById('glaze'); // Glaze select element
+const sizeOptionSelect = document.getElementById('size'); // Price select element
+
+// Calls constructor and adding it to cart array 
+function addToCart () {
+    const newCartProduct = new Roll(
+        rollType, // rollType
+        glazeOptionSelect.options[glazeOptionSelect.selectedIndex].text, // rollGlazing Source: https://www.geeksforgeeks.org/how-to-get-selected-value-in-dropdown-list-using-javascript/ 
+        sizeOptionSelect.options[sizeOptionSelect.selectedIndex].text, // packSize
+        currentRoll.basePrice// basePrice
+    ) 
+    cart.push(newCartProduct);
+    console.log(cart);
+}
+
+// Calling addToCart function when add to cart button click  
+document.getElementById('add-cart').addEventListener("click", addToCart);
