@@ -72,8 +72,8 @@ function addToCart () {
         sizeOptionSelect.options[sizeOptionSelect.selectedIndex].text, // packSize
         currentRoll.basePrice// basePrice
     ) 
-    cart.push(newCartProduct);
-    console.log(cart);
+    cart.push(newCartProduct); // Adding new object to cart
+    console.log(cart); // Printing cart array
 }
 
 // Calling addToCart function when add to cart button click  
