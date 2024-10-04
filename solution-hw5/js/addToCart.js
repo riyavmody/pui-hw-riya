@@ -71,11 +71,11 @@ function createElement(product) {
     // Connect this clone to our product.element
     product.element = clone.querySelector('.cart-clone');
   
-    // const removeBtn = product.element.querySelector('.remove');
-    // console.log(removeBtn);
-    // removeBtn.addEventListener('click', () => {
-    // deleteNote(product); // NEED TO WRITE
-    // });
+    const removeBtn = product.element.querySelector('.remove');
+    console.log(removeBtn);
+    removeBtn.addEventListener('click', () => {
+    deleteProduct(product); // NEED TO WRITE
+    });
     
     const productListElement = document.querySelector('.full-details'); // Add product clone into DOM
     productListElement.append(product.element); // Find product parent (#full-details) and add product as its child
@@ -97,6 +97,12 @@ function updateElement(product) {
     productGlazingElement.innerText = 'Glazing: ' + product.glazing;
     productPackElement.innerText = 'Pack Size: ' + product.size;
     productPriceElement.innerText = '$' + product.price;
+}
+
+// Delete product from list
+function deleteProduct(product) {
+    product.element.remove();    // Remove the product DOM object from the UI
+    finalCart.remove(product); // Remove the actual Notecard object from our set of notecards
 }
 
 // Loop through cinnamonRolls object and construct a new roll every time 
