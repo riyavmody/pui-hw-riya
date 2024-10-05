@@ -72,7 +72,6 @@ function createElement(product) {
     product.element = clone.querySelector('.cart-clone');
   
     const removeBtn = product.element.querySelector('.remove');
-    console.log(removeBtn);
     removeBtn.addEventListener('click', () => {
     deleteProduct(product); // NEED TO WRITE
     });
@@ -101,8 +100,15 @@ function updateElement(product) {
 
 // Delete product from list
 function deleteProduct(product) {
-    product.element.remove();    // Remove the product DOM object from the UI
-    finalCart.remove(product); // Remove the actual product object from our set of notecard
+    product.element.remove(); // Remove the product DOM object from the UI
+    const index = finalCart.indexOf(product);
+
+    // Dropping product from cart array
+    if (index > -1) {
+        finalCart.splice(index, 1); // Remove the product object from finalCart
+    }
+    console.log("New array after remove: ")
+    console.log(finalCart);
 }
 
 // Loop through cinnamonRolls object and construct a new roll every time 
@@ -117,4 +123,5 @@ for (roll in finalCart) {
     createElement(product);
 }
 
+console.log('Initial cart array: '); 
 console.log(finalCart);
