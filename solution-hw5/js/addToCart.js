@@ -124,7 +124,7 @@ function updateCartTotal(product) {
     finalCart.forEach(product => {
         total += parseFloat(product.price);
     });
-    cartTotalElement.textContent = '$' + total; // Update the displayed total
+    cartTotalElement.textContent = '$' + total.toFixed(2); // Update the displayed total
 }
 
 // Loop through cinnamonRolls object and construct a new roll every time 
