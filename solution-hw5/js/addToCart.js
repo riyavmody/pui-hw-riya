@@ -53,7 +53,10 @@ class Roll {
 // Construct new roll and push to cart
 function newRoll (rollType, rollGlaze, packSize, rollPrice, rollURL) {
     const newRoll = new Roll(rollType, rollGlaze, packSize, rollPrice, rollURL);
-    finalCart.push(newRoll);
+
+    finalCart.push(newRoll); // Adding roll to cart array
+
+    updateCartTotal(newRoll); // Update cart total when new roll is added
 }
 
 // Update product price based on base price, glazing selection and pack price 
@@ -107,8 +110,21 @@ function deleteProduct(product) {
     if (index > -1) {
         finalCart.splice(index, 1); // Remove the product object from finalCart
     }
+
     console.log("New array after remove: ")
     console.log(finalCart);
+
+    updateCartTotal(product); // Update cart total when product is removed 
+}
+
+// Update cart total price
+function updateCartTotal(product) {
+    const cartTotalElement = document.querySelector('#cart-total-price');
+    let total = 0;
+    finalCart.forEach(product => {
+        total += parseFloat(product.price);
+    });
+    cartTotalElement.textContent = '$' + total; // Update the displayed total
 }
 
 // Loop through cinnamonRolls object and construct a new roll every time 
