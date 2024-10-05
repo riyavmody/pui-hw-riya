@@ -80,7 +80,7 @@ function createElement(product) {
     const productListElement = document.querySelector('.full-details'); // Add product clone into DOM
     productListElement.append(product.element); // Find product parent (#full-details) and add product as its child
     
-    updateElement(product); // NEED TO WRITE  // Populate the product clone with the actual product content
+    updateElement(product); // Populate the product clone with the actual product content
 }
 
 function updateElement(product) {
@@ -102,7 +102,7 @@ function updateElement(product) {
 // Delete product from list
 function deleteProduct(product) {
     product.element.remove();    // Remove the product DOM object from the UI
-    finalCart.remove(product); // Remove the actual Notecard object from our set of notecards
+    finalCart.remove(product); // Remove the actual product object from our set of notecard
 }
 
 // Loop through cinnamonRolls object and construct a new roll every time 
@@ -112,9 +112,9 @@ for (const roll in cinnamonRolls) {
     const product = newRoll(roll, rollDetails.glazing, rollDetails.packSize, calculatedPrice, rollDetails.url);
 }
 
-console.log(finalCart);
-
 for (roll in finalCart) {
     const product = finalCart[roll];
     createElement(product);
 }
+
+console.log(finalCart);
