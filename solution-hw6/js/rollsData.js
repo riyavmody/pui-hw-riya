@@ -32,49 +32,30 @@ const rolls = {
     }    
 };
 
-// Defining URL parameters to index the current roll type
-const queryString = window.location.search; // Getting current URL
-const params = new URLSearchParams(queryString);
-const rollType = params.get('roll'); // Getting current roll name from URL
+let currentRoll;
 
-// Getting HTML elements 
-const detailImage = document.getElementById('detail-image'); // Get image src
-const productTitle = document.querySelector('#intro'); // Get page title  
+document.addEventListener('DOMContentLoaded', () => {
+    // Defining URL parameters to index the current roll type
+    const queryString = window.location.search;
+    const params = new URLSearchParams(queryString);
+    const rollType = params.get('roll');
 
-// Changing HTML elements (image, text)
-const currentRoll = rolls[rollType]; // Get current roll as object
-detailImage.src = currentRoll.imageFile; // Changing image source based on current URL
-detailImage.alt = currentRoll.altText; // Changing image alt text based on current URL
-productTitle.textContent = rollType + ' cinnamon roll'; // Changing product title based on current URL 
+    if (rollType && rolls[rollType]) {
+        currentRoll = rolls[rollType];
+        currentRoll.type = rollType;
 
-// Roll constructor
-class Roll {
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice;
+        // Getting HTML elements 
+        const detailImage = document.getElementById('detail-image');
+        const productTitle = document.querySelector('#intro p');
+
+        // Changing HTML elements (image, text)
+        if (detailImage) {
+            detailImage.src = currentRoll.imageFile;
+            detailImage.alt = currentRoll.altText;
+        }
+
+        if (productTitle) {
+            productTitle.textContent = rollType + ' cinnamon roll';
+        }
     }
-}
-
-// Initializing cart array 
-const cart = [];
-
-// Getting select elements 
-const glazeOptionSelect = document.getElementById('glaze'); // Glaze select element
-const sizeOptionSelect = document.getElementById('size'); // Price select element
-
-// Calls constructor and adding it to cart array 
-function addToCart () {
-    const newCartProduct = new Roll(
-        rollType, // rollType
-        glazeOptionSelect.options[glazeOptionSelect.selectedIndex].text, // rollGlazing Source: https://www.geeksforgeeks.org/how-to-get-selected-value-in-dropdown-list-using-javascript/ 
-        sizeOptionSelect.options[sizeOptionSelect.selectedIndex].text, // packSize
-        currentRoll.basePrice// basePrice
-    ) 
-    cart.push(newCartProduct); // Adding new object to cart
-    console.log(cart); // Printing cart array
-}
-
-// Calling addToCart function when add to cart button click  
-document.getElementById('add-cart').addEventListener("click", addToCart);
+});

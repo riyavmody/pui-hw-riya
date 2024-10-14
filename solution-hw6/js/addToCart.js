@@ -1,143 +1,82 @@
-//---------------------CART INTERACTIONS---------------------//
+document.addEventListener('DOMContentLoaded', () => {
+    const fullDetailsElement = document.querySelector('.full-details');
+    const templateElement = document.querySelector('.image-details');
 
-// Initializing cart array
-finalCart = [];
-
-// Cart items object
-const cinnamonRolls = {
-    "Original": {
-        "glazing": "Sugar Milk",
-        "glazingPrice": 0,
-        "packSize": 1,
-        "packPrice": 1,
-        "basePrice": 2.49,
-        "url": "../assets/products/original-cinnamon-roll.jpg"
-    },
-    "Walnut": {
-        "glazing": "Vanilla Milk",
-        "glazingPrice": .5,
-        "packSize": 12,
-        "packPrice": 10,
-        "basePrice": 3.49,
-        "url": "../assets/products/walnut-cinnamon-roll.jpg"        
-    },
-    "Raisin": {
-        "glazing": "Sugar Milk",
-        "glazingPrice": 0,
-        "packSize": 3, 
-        "packPrice": 3,
-        "basePrice": 2.99,
-        "url": "../assets/products/raisin-cinnamon-roll.jpg"
-    },
-    "Apple": {
-        "glazing": "Original",
-        "glazingPrice": 0,
-        "packSize": 3, 
-        "packPrice": 3,
-        "basePrice": 3.49,
-        "url": "../assets/products/apple-cinnamon-roll.jpg"
-    }  
-};
-
-// Roll constructor 
-class Roll {
-    constructor(rollType, rollGlazing, packSize, rollPrice, rollURL) {
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.price = rollPrice;
-        this.url = rollURL;
+    if (fullDetailsElement && templateElement) {
+        updateCartDOM(fullDetailsElement, templateElement);
     }
-}
+});
 
-// Construct new roll and push to cart
-function newRoll (rollType, rollGlaze, packSize, rollPrice, rollURL) {
-    const newRoll = new Roll(rollType, rollGlaze, packSize, rollPrice, rollURL);
-
-    finalCart.push(newRoll); // Adding roll to cart array
-
-    updateCartTotal(newRoll); // Update cart total when new roll is added
-}
-
-// Update product price based on base price, glazing selection and pack price 
-function updateProductPrice (basePrice, glazingPrice, packPrice) { 
-    let updatedPrice = (basePrice + glazingPrice) * packPrice;
-    return updatedPrice.toFixed(2);
-}
-
-// Clone product container 
-function createElement(product) {
-    // Make a clone of the product details template
-    const template = document.querySelector('.image-details');
-    const clone = template.content.cloneNode(true);
+// Update cart display
+function updateCartDOM(fullDetailsElement, templateElement) {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
     
-    // Connect this clone to our product.element
-    product.element = clone.querySelector('.cart-clone');
-  
-    const removeBtn = product.element.querySelector('.remove');
-    removeBtn.addEventListener('click', () => {
-    deleteProduct(product); // NEED TO WRITE
+    // Clear existing items
+    fullDetailsElement.innerHTML = '';
+    
+    // Re-add the template
+    fullDetailsElement.appendChild(templateElement);
+    
+    // Create and add product elements
+    cart.forEach((product, index) => {
+        const productElement = createProductElement(product, templateElement, index);
+        if (productElement) {
+            fullDetailsElement.insertBefore(productElement, templateElement);
+        }
     });
     
-    const productListElement = document.querySelector('.full-details'); // Add product clone into DOM
-    productListElement.append(product.element); // Find product parent (#full-details) and add product as its child
-    
-    updateElement(product); // Populate the product clone with the actual product content
+    updateCartTotal(cart);
 }
 
-function updateElement(product) {
-    // Get the HTML elements that need updating
-    const productTitleElement = product.element.querySelector('.product-title');
-    const productImageElement = product.element.querySelector('.cart-image');
-    const productGlazingElement = product.element.querySelector('.glazing-type');
-    const productPackElement = product.element.querySelector('.pack-size');
-    const productPriceElement = product.element.querySelector('.item-price');    
+// Create product element from template
+function createProductElement(product, templateElement, index) {
+    const clone = templateElement.content.cloneNode(true);
     
-    // Copy our product content over to the corresponding HTML elements
-    productTitleElement.innerText = product.type + ' Cinnamon Roll';
-    productImageElement.src = product.url;
-    productGlazingElement.innerText = 'Glazing: ' + product.glazing;
-    productPackElement.innerText = 'Pack Size: ' + product.size;
-    productPriceElement.innerText = '$' + product.price;
-}
-
-// Delete product from list
-function deleteProduct(product) {
-    product.element.remove(); // Remove the product DOM object from the UI
-    const index = finalCart.indexOf(product);
-
-    // Dropping product from cart array
-    if (index > -1) {
-        finalCart.splice(index, 1); // Remove the product object from finalCart
+    const imageElement = clone.querySelector('.cart-image');
+    const titleElement = clone.querySelector('.product-title');
+    const glazingElement = clone.querySelector('.glazing-type');
+    const packSizeElement = clone.querySelector('.pack-size');
+    const priceElement = clone.querySelector('.item-price');
+    const removeButton = clone.querySelector('.remove');
+    
+    // Set product details
+    if (imageElement && rolls && rolls[product.type]) {
+        imageElement.src = rolls[product.type].imageFile;
     }
+    if (titleElement) titleElement.textContent = product.type + ' Cinnamon Roll';
+    if (glazingElement) glazingElement.textContent = `Glazing: ${product.glazing}`;
+    if (packSizeElement) packSizeElement.textContent = `Pack Size: ${product.packSize}`;
+    if (priceElement) {
+        const price = parseFloat(product.price);
+        priceElement.textContent = isNaN(price) ? 'Price not available' : `$${price.toFixed(2)}`;
+    }
+    
+    // Add remove button functionality
+    if (removeButton) {
+        removeButton.addEventListener('click', () => removeFromCart(index));
+    }
+    
+    return clone.firstElementChild;
+}
 
-    console.log("New array after remove: ")
-    console.log(finalCart);
-
-    updateCartTotal(product); // Update cart total when product is removed 
+// Remove product from cart
+function removeFromCart(index) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.splice(index, 1);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    
+    const fullDetailsElement = document.querySelector('.full-details');
+    const templateElement = document.querySelector('.image-details');
+    if (fullDetailsElement && templateElement) {
+        updateCartDOM(fullDetailsElement, templateElement);
+    }
 }
 
 // Update cart total price
-function updateCartTotal(product) {
-    const cartTotalElement = document.querySelector('#cart-total-price');
-    let total = 0;
-    finalCart.forEach(product => {
-        total += parseFloat(product.price);
-    });
-    cartTotalElement.textContent = '$' + total.toFixed(2); // Update the displayed total
+function updateCartTotal(cart) {
+    const totalElement = document.getElementById('cart-total-price');
+    if (totalElement) {
+        const total = cart.reduce((sum, product) => sum + parseFloat(product.price || 0), 0);
+        totalElement.textContent = `$${total.toFixed(2)}`;
+    }
 }
-
-// Loop through cinnamonRolls object and construct a new roll every time 
-for (const roll in cinnamonRolls) {
-    let rollDetails = cinnamonRolls[roll];
-    let calculatedPrice = updateProductPrice(rollDetails.basePrice, rollDetails.glazingPrice, rollDetails.packPrice);
-    const product = newRoll(roll, rollDetails.glazing, rollDetails.packSize, calculatedPrice, rollDetails.url);
-}
-
-for (roll in finalCart) {
-    const product = finalCart[roll];
-    createElement(product);
-}
-
-console.log('Initial cart array: '); 
-console.log(finalCart);

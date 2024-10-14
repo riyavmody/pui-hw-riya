@@ -6,9 +6,8 @@
     <meta charset="UTF-8">
     <title>Detail</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="js/rollsData.js" defer></script>
-    <script type="text/javascript" src="js/main.js" defer></script>
-    <script type="text/javascript" src="js/addToCart.js" defer></script>
+    <script type="text/javascript" src="js/definitions.js" defer></script>
+    <script type="text/javascript" src="js/execution.js" defer></script>
   </head>
     
   <body>
@@ -49,16 +48,18 @@
 
         <!-- Glazing select tag -->
 
-        <p id="glazing-display">Glazing: </p>
-        <select id="glaze">
+        <p>Glazing:</p>
+        <select name="glaze" id="glaze"
+          onchange="updatePrice(this)">
         </select>
 
         <br> <!-- Line break -->
         <br> <!-- Line break -->
 
         <!-- Pack size select tag -->
-        <p id="packsize-display">Pack Size: </p>
-        <select id="size">
+        <p>Pack size:</p>
+        <select name="size" id="size"
+          onchange="updatePrice(this)">
         </select>
       </div>
 
