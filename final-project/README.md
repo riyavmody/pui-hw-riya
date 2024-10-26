@@ -215,11 +215,16 @@ Add a few sentences about your design. Briefly state the motivation of each proj
 * What information do you specifically want to convey and include on your website?
 
 ### *Idea 2 - The Ramayana*
+![Ramayana home page](images/ramayana.png)
+![Ramayana home page](images/ram.jpg)
+![Ramayana home page](images/sita.jpg)
+![Ramayana home page](images/lakshman.jpg)
+![Ramayana home page](images/hanuman.jprag)
 
 …
 
 ### *Idea 3 - Angels on Stage*
-
+![Ramayana home page](images/aos.png)
 …
 
 ## Feedback Summary
