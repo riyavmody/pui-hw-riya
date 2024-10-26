@@ -207,12 +207,11 @@ How would you use Generative AI responsibly?
 ![Portfolio home page](images/portfolio-home-page.png)
 ![Portfolio project page](images/portfolio-project-page.png)
 
-Add a few sentences about your design. Briefly state the motivation of each project idea. Example questions to answer:
+The basic idea is to create a competitive research portfolio that showcases my previous research experience and makes me stand out to employers.  
 
-* What is the basic idea of your final project? (1-2 sentences)  
-* How do you plan to make your design interactive and engaging?  
-* How do you plan to make your design accessible?  
-* What information do you specifically want to convey and include on your website?
+* I plan to make the design interactive by having buttons that are clickable which allow the user to navigate to the individual project pages
+* The accessibility piece of this design will come in the form of tab navigation, color contrast, and large, readable text
+* I would like to convey to employers that I have professional work experience in the user experience research field and that I will be a dedicated, hardworking employee
 
 ### *Idea 2 - The Ramayana*
 ![Ramayana home page](images/ramayana.png)
@@ -221,11 +220,20 @@ Add a few sentences about your design. Briefly state the motivation of each proj
 ![Lakshman](images/lakshman.jpg)
 ![Hanuman](images/hanuman.jpg)
 
-…
+The basic idea is to create an interactive learning experience for users to understand the history of Diwali by outlining the story of the Ramayana.  
+
+* I plan to make the design interactive by allowing users to hover over each character card to learn more about them, create an interactive timeline which users can click on to be taken to a portion of the storyline.
+* The accessibility piece of this design will come in the form of tab navigation, color contrast, and large, readable text.
+* I would like to convey to users the importance of the story of the Ramayana. I want this platform to educate users about the origins and significance of Diwali, including how it is celebrated in the Hindu culture.  
 
 ### *Idea 3 - Angels on Stage*
-![Ramayana home page](images/aos.png)
-…
+![Angels on Stage home page](images/aos.png)
+
+The basic idea is to create a website that will support and showcase, Angels on Stage, a performing arts program designed for children with disabilities.  
+
+* I plan to make the design interactive by allowing users to visit each page on the website through the site navigation menu. They can click into each page which will have a variety of informational content (e.g., videos, photos, text, etc). 
+* The accessibility piece of this design will come in the form of tab navigation, color contrast, and large, readable text.
+* I would like to convey to users that disability is not something that limits individuals but rather something to celebrate. I would also like to use this platform to dispel common stereotypes.
 
 ## Feedback Summary
 
