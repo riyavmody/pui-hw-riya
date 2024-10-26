@@ -216,10 +216,10 @@ Add a few sentences about your design. Briefly state the motivation of each proj
 
 ### *Idea 2 - The Ramayana*
 ![Ramayana home page](images/ramayana.png)
-![Ramayana home page](images/ram.jpg)
-![Ramayana home page](images/sita.jpg)
-![Ramayana home page](images/lakshman.jpg)
-![Ramayana home page](images/hanuman.jprag)
+![Ram](images/ram.jpg)
+![Sita](images/sita.jpg)
+![Lakshman](images/lakshman.jpg)
+![Hanuman](images/hanuman.jpg)
 
 …
 
