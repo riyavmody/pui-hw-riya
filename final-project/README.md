@@ -202,9 +202,10 @@ How would you use Generative AI responsibly?
 
 ## Idea Sketches
 
-### *Idea 1*
+### *Idea 1 - Personal Portfolio*
 
-![title for sketch1](images/sketch1.png)
+![Portfolio home page](images/portfolio-home-page.png)
+![Portfolio project page](images/portfolio-project-page.png)
 
 Add a few sentences about your design. Briefly state the motivation of each project idea. Example questions to answer:
 
@@ -213,11 +214,11 @@ Add a few sentences about your design. Briefly state the motivation of each proj
 * How do you plan to make your design accessible?  
 * What information do you specifically want to convey and include on your website?
 
-### *Idea 2*
+### *Idea 2 - The Ramayana*
 
 …
 
-### *Idea 3*
+### *Idea 3 - Angels on Stage*
 
 …
 
