@@ -237,7 +237,14 @@ The basic idea is to create a website that will support and showcase, Angels on 
 
 ## Feedback Summary
 
-Summarize all the critiques you received during the lab session (\~300 words). 
+### *Idea 1 - Personal Portfolio*
+I quickly shared this idea with a classmate during a speed dating critique session but opted not to get feedback since I decided early on to go in a different direction. My focus is shifting toward user experience research within the assistive technology space and I don’t feel that a JavaScript portfolio would best showcase my skills. Additionally, I would not be able to maintain it over time. Instead, I want to use a site like SquareSpace or Wix to visually demonstrate my abilities, with an emphasis on design over code.
+
+### *Idea 2 - The Ramayana*
+I got a range of feedback from my peers which was extremely helpful in determining which direction to go in. Brenna helped me consider a different visual style for the Ramayana website. Instead of an interactive timeline to show the story progression, she suggested I use parallax scrolling style to create a visual story. In this format, the story would be told vertically with various strong visual components. We also discussed making the website look and feel like a book with page flipping animations, a play on the idea that this is a Hindu epic which was historically depicted in a physical book. Seun suggested I compliment the parallax style by incorporating a progression bar so users don’t get frustrated with the continuous scrolling motion. She also added that I could include interactive anchor points on the progression bar so that users can skip ahead or backward. Finally, Niki mentioned that visuals will be hard to find for this project due to the fact that this story is an ancient religious text. She mentioned that I could use the p5 library to generate some artwork to complement the sparse visuals I could find. She said I could also supplement the visual component by animating my character cards. 
+
+### *Idea 3 - Angels on Stage*
+I also got great feedback on my Angels on Stage project proposal and this feedback ultimately led me to deciding on this idea. Lucy mentioned that thinking of the users before designing the interactive components was a great starting point and the right way to go about it. She did mention that an informal user test could be helpful to get an idea of users’ mental model of disability in order to effectively dispel their stereotypes about the topic. Evolone mentioned that I should consider which data I would like to pull in using an API. She suggested I think about data visualization through a pre-packaged library or software that would report on statistics around disability because this could emotionally hook users. Finally, Seun told me to strongly focus on the accessibility features of the website since this would be tailored to individuals with disabilities and their families. 
 
 ## Feedback Digestion
 
