@@ -125,7 +125,7 @@ Remember to keep track of your prompts and usage for [FP4 writeup](#part-6-gener
 
 ## Project Description
 
-The basic idea is to create a website that will support and showcase, Angels on Stage, a performing arts program designed for children with disabilities. I would like this website to be more visually eye-catching than it is currently so that it can drive more traffic and donations. Additionally, it should fit the vision and mission of the program so that the staff who manage the website could make any necessary adjustments if they decided to adopt the design.
+The basic idea is to create a website that will support and showcase Angels on Stage, a performing arts program designed for children with disabilities. I would like this website to be very visually eye-catching and driven by storytelling so that it would be more impactful. Ideally, it will showcase images and quotes from the Angels (the participants) that will come together to tell a full story. Additionally, it should fit the vision and mission of the program so that the staff who manage the company’s website could find a place for it in their current design. 
 
 ## High-Fi Prototypes
 
