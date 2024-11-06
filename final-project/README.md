@@ -179,7 +179,8 @@ Outline weekly milestones to plan your expected implementation progress until th
 
 ### *Libraries and Other Components*
 
-List the JS libraries and other components (if applicable) that you plan to use. 
+1. jQuery: create simple parallax scrolling effects  
+2. Textillate.js: animate text, which would add a storytelling element 
 * 
 
 
