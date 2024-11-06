@@ -125,13 +125,13 @@ Remember to keep track of your prompts and usage for [FP4 writeup](#part-6-gener
 
 ## Project Description
 
-Briefly restate your motivation and a short description of your project.
+The basic idea is to create a website that will support and showcase, Angels on Stage, a performing arts program designed for children with disabilities. I would like this website to be more visually eye-catching than it is currently so that it can drive more traffic and donations. Additionally, it should fit the vision and mission of the program so that the staff who manage the website could make any necessary adjustments if they decided to adopt the design.
 
 ## High-Fi Prototypes
 
 ### *Prototype 1*
 
-![title for prototype1](images/prototype1.png)
+![Home Page](images/FP2/Prot1_A.png)
 
 A brief description and summary of the user feedback (\<100 words, 2 images) 
 
