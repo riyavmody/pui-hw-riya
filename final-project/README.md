@@ -181,8 +181,6 @@ Outline weekly milestones to plan your expected implementation progress until th
 
 1. jQuery: create simple parallax scrolling effects  
 2. Textillate.js: animate text, which would add a storytelling element 
-* 
-
 
 ## Generative AI Use Plan
 
@@ -190,13 +188,20 @@ Outline how you plan to use Generative AI tools to aid in the implementation (\~
 
 ### *Tool Use*
 
- What would you use? Edit the list given your plan. For each tool, explain briefly on what do you expect Generative AI to help you with and what might it not be able to help you with.
+1. Figma: design prototyping
+  * GenAI for tutorials on how to achieve certain designs because I am new to Figma 
+2. NY Times: parallax scrolling inspiration 
+3. Github: version control 
+4. JS libraries: enable easy development of parallax scrolling and animations
+  * GenAI for debugging code 
+5. Canva: creating visual components, swirls, aesthetics, etc 
+6. Pinterest: mood board and design inspiration 
 
 * ChatGPT  
-  * I will use it for … because it can help me …  
-  * I will not use it for … because it might not be able to help me with …   
+  * I will use it for debugging code and researching because it can help me be more efficient to maximize the time I am spending on coding and minimize the time I am spending on tedious tasks.   
+  * I won’t use it for creative decision-making because it might miss the deeper goals of the Angels on Stage project, like breaking down stereotypes about disabilities. AI can suggest design ideas, but it probably doesn’t have the context or empathy to fully capture the program’s mission. 
 * GitHub Copilot  
-* ...
+  * As a new JavaScript developer, I can use GitHub Copilot to help me learn by showing me how to use unfamiliar functions or methods. If I’m unsure how to implement a feature like the parallax scroll or text animations, Copilot can provide me with examples of how those features are typically written.
 
 ### *Responsible Use*
 
