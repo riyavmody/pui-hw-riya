@@ -205,7 +205,7 @@ Outline how you plan to use Generative AI tools to aid in the implementation (\~
 
 ### *Responsible Use*
 
-How would you use Generative AI responsibly? 
+I will use GenAI responsibly by maintaining transparency and giving acknowledgement to how and when I use it, including for debugging. I would also like to be cognizant about the possible biases and stereotypes that could be present in responses, especially because my subject matter is around individuals with disabilities. 
 
 ---
 
