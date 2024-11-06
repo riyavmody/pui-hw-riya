@@ -130,17 +130,22 @@ The basic idea is to create a website that will support and showcase, Angels on 
 ## High-Fi Prototypes
 
 ### *Prototype 1*
-
 ![Home Page](images/FP2/Prot1_A.png)
+![Navigation Menu](images/FP2/Prot1_B.png)
 
 A brief description and summary of the user feedback (\<100 words, 2 images) 
 
 ### *Prototype 2*
-
+![About Us Starting](images/FP2/Prot2_A.png)
+![About Us Scroll View 1](images/FP2/Prot2_B.png)
+![About Us Scroll View 2](images/FP2/Prot2_C.png)
 …
 
 ## Usability Test
-
+![Landing Page](images/FP2/Post_A.png)
+![Scroll 1](images/FP2/Post_B.png)
+![Scroll 2](images/FP2/Post_C.png)
+![Scroll 3](images/FP2/Post_D.png)
 Discuss the user feedback you got during the evaluation / usability test (\~300 words). Indicate which feedback you implemented, inspired new directions, or otherwise influenced your final design. 
 
 ## Updated Designs
