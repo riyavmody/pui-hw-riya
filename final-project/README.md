@@ -185,7 +185,8 @@ Outline weekly milestones to plan your expected implementation progress until th
 
 ## Generative AI Use Plan
 
-Outline how you plan to use Generative AI tools to aid in the implementation (\~300 words).
+I plan to use GenAI as a resource for this project to help me with more tedious, repetitive tasks that will free up my creative energy to use towards generating new ideas and code. I could use it for learning and understanding code concepts. For example, if I was researching documentation for parallax scrolling online and came across a chunk of code I did not understand, I could use ChatGPT to explain it to me. This will help me understand the syntax and logic better rather than just copying it line for line. GenAI could also assist with troubleshooting and debugging. I can paste errors I receive into the system to find where there are issues in my code. Additionally, I can use GenAI to get feedback on my code’s efficiency. There may be lines of code that are repetitive and AI could suggest how to optimize the structure so that it runs better and quicker. Finally, I could use AI to catch and suggest accessibility features that I may have missed, like making sure colors have high contrast or adding appropriate ARIA labels. Since this website is meant to celebrate disability and dispel stereotypes about it, it only makes sense for the website to be accessible to anyone who has a disability. 
+I do not plan to use AI for creating core functionality in my website. I believe that the creative portion of this website should be driven by my original thoughts and using an AI to accomplish this would not be as effective. 
 
 ### *Tool Use*
 
