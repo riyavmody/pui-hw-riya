@@ -190,7 +190,7 @@ Week 14 (Dec 2 - Dec 6): This final week will be for completing the final projec
   - [X] Build hi-fidelity prototypes
   - [X] Test hi-fidelity prototypes
 
- - [ ] Week 10 Nov 4 \- Nov 8:   
+- [ ] Week 10 Nov 4 \- Nov 8:   
   - [X] FP2 due
   - [ ] Finalize design
   - [ ] Start experimenting with JavaScript libraries and coding basic functionality
