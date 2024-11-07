@@ -214,7 +214,6 @@ Week 14 (Dec 2 - Dec 6): This week will be for completing the final project docu
 - [ ] Week 14 Dec 2 \- Dec 6:  
   - [ ] Complete final project documentation and associated materials
   - [ ] FP4 due
-  - [ ] Prepare for final presentation
 
 ### *Libraries and Other Components*
 
