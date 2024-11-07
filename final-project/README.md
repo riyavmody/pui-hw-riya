@@ -133,13 +133,14 @@ The basic idea is to create a website that will support and showcase Angels on S
 ![Home Page](images/FP2/Prot1_A.png)
 ![Navigation Menu](images/FP2/Prot1_B.png)
 
-A brief description and summary of the user feedback (\<100 words, 2 images) 
+This prototype depicts my vision of the home page and navigation menu. I wanted the hero image to be powerful and impactful, so I opted for a hamburger menu so as to not detract from the image. The feedback I got from classmates was that a hamburger menu may be too many clicks for the user to be able to access what they are looking for, especially in the case when they come to the website looking for something specific. They shared that I could opt for a regular navigation menu where each menu item lives on the home page. They suggested I make the text on the redesigned navigation bar a light gray instead of white so that it does not detract from the hero image as much. 
 
 ### *Prototype 2*
 ![About Us Starting](images/FP2/Prot2_A.png)
 ![About Us Scroll View 1](images/FP2/Prot2_B.png)
 ![About Us Scroll View 2](images/FP2/Prot2_C.png)
-…
+
+This prototype is of the About Me section of the website. The purpose is to walk users through the vision and mission of Angels on Stage as well as share a bit about its origins. It is intended to be in a parallax scrolling style and I was actually able to accomplish this using Figma SmartAnimate (although I was not able to attach a video to the README file). The feedback from users was that I should consider not overlapping the text with the image on the second screenshot because it does not look intentional. Additionally, users shared that I should align all the text (either right or left) so that it looks consistent while users are scrolling. 
 
 ## Usability Test
 ![Landing Page](images/FP2/Post_A.png)
