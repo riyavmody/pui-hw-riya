@@ -143,15 +143,14 @@ This prototype depicts my vision of the home page and navigation menu. I wanted 
 This prototype is of the About Me section of the website. The purpose is to walk users through the vision and mission of Angels on Stage as well as share a bit about its origins. It is intended to be in a parallax scrolling style and I was actually able to accomplish this using Figma SmartAnimate (although I was not able to attach a video to the README file). The feedback from users was that I should consider not overlapping the text with the image on the second screenshot because it does not look intentional. Additionally, users shared that I should align all the text (either right or left) so that it looks consistent while users are scrolling. 
 
 ## Usability Test
+Discuss the user feedback you got during the evaluation / usability test (\~300 words). Indicate which feedback you implemented, inspired new directions, or otherwise influenced your final design. 
+
+## Updated Designs
 ![Landing Page](images/FP2/Post_A.png)
 ![Scroll 1](images/FP2/Post_B.png)
 ![Scroll 2](images/FP2/Post_C.png)
 ![Scroll 3](images/FP2/Post_D.png)
-Discuss the user feedback you got during the evaluation / usability test (\~300 words). Indicate which feedback you implemented, inspired new directions, or otherwise influenced your final design. 
-
-## Updated Designs
-
-Show screenshots of your updated design based on the user feedback (\<100 words, \~2 images).
+As mentioned above, I chose to move in a different direction after the usability test and user feedback from class. This design depicts what I imagine will be a visual story about Angels on Stage and the impact it has had on the community. I have incorporated high contrast color choices and powerful imagery to grab the attention of the user and play on the emotional side of this issue. I plan to add elements, like the swirl, that will parallax, along with the images and text, as the user scrolls through the website. This will give the site a polished but fun feel, which compliments the goal I have for this website, which is to draw users in and dispel stereotypes about disability. 
 
 ## Feedback Summary
 
