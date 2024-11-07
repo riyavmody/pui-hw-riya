@@ -168,24 +168,53 @@ The best feedback came from Niki, who suggested I change the idea slightly to ma
 
 ## Milestones
 
-Outline weekly milestones to plan your expected implementation progress until the end of the semester (\~300 words). 
+Week 9 (Oct 28 - Nov 1) was focused on basics. I was ideating, finalizing the project proposal, figuring out how this website would fit with Angels on Stage’s existing values and mission, and understanding how to translate that into code. I also gathered high-quality images sourced from the program itself and researched libraries like Textillate, D3, Pixi, p5, and jQuery. I finalized the design I will be building out. 
+
+Week 10 (Nov 4 - Nov 8) I will continue to build out the high-fidelity prototype on Figma, thinking about which visuals I would like to incorporate and how the information architecture will be organized. I will also use this time to begin building the website structure, coding the basic layout for parallax scrolling, and thinking about where I want to incorporate animation. By the end of this week, I will have a running project with a functional skeleton to show to my classmates in order to get feedback from them for the next phase of this project 
+
+Week 11 (Nov 11 - Nov 15) I will focus on refining the layout and enhancing visual effects. I’ll integrate images, finalize text placeholders, and fine-tune animations to create a cohesive user experience. The goal for this week is to make sure the website is both visually appealing and functional.
+
+Week 12 (Nov 18 - Nov 22) will prioritize accessibility and optimization. I’ll ensure the website is accessible, responsive, and optimized for various devices. After testing for high contrast and proper navigation, I’ll refine the design for ease of use.
+
+Week 13 (Nov 25 - Nov 29): will be dedicated to final adjustments, incorporating feedback, polishing the design.  
+
+Week 14 (Dec 2 - Dec 6): This final week will be for completing the final project documentation and any other associated materials. 
 
 ### *Implementation Plan*
 
 - [ ] Week 9 Oct 28 \- Nov 1:
+  - [X] Finalize project proposal and goals
+  - [X] Gather high-quality images from volunteer coordinators
+  - [X] Research JavaScript libraries (Textillate, D3, Pixi, p5, jQuery) for visual storytelling elements
   - [X] FP1 due
-  - [ ] ...
-  
-- [ ] Week 10 Nov 4 \- Nov 8:   
-  - [ ] FP2 due
+  - [X] Build hi-fidelity prototypes
+  - [X] Test hi-fidelity prototypes
 
-- [ ] Week 11 Nov 11 \- Nov 15:  
+ - [ ] Week 10 Nov 4 \- Nov 8:   
+  - [X] FP2 due
+  - [ ] Finalize design
+  - [ ] Start experimenting with JavaScript libraries and coding basic functionality
+  - [ ] Begin implementing simple parallax animations and text effects for testing
+
+- [ ] Week 11 Nov 11 \- Nov 15:
+  - [ ] Refine website layout and incorporate images
+  - [ ] Finalize text placeholders and animations
+  - [ ] Ensure the website is visually appealing and functional
+
 - [ ] Week 12 Nov 18 \- Nov 22:   
+  - [ ] Prioritize accessibility features (e.g., contrast, ARIA labels, navigation)
+  - [ ] Ensure the website is responsive and optimized for various devices
+  - [ ] Refine design for ease of use and test functionality
+ 
 - [ ] Week 13 Nov 25 \- Nov 29:  
-
+  - [ ] Incorporate feedback and finalize any remaining design changes
+  - [ ] Conduct final optimization and debugging
   - [ ] Thanksgiving  
+ 
 - [ ] Week 14 Dec 2 \- Dec 6:  
-  - [ ] FP4 due 
+  - [ ] Complete final project documentation and associated materials
+  - [ ] FP4 due
+  - [ ] Prepare for final presentation
 
 ### *Libraries and Other Components*
 
