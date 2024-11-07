@@ -172,13 +172,13 @@ Week 9 (Oct 28 - Nov 1) was focused on basics. I was ideating, finalizing the pr
 
 Week 10 (Nov 4 - Nov 8) I will continue to build out the high-fidelity prototype on Figma, thinking about which visuals I would like to incorporate and how the information architecture will be organized. I will also use this time to begin building the website structure, coding the basic layout for parallax scrolling, and thinking about where I want to incorporate animation. By the end of this week, I will have a running project with a functional skeleton to show to my classmates in order to get feedback from them for the next phase of this project 
 
-Week 11 (Nov 11 - Nov 15) I will focus on refining the layout and enhancing visual effects. I’ll integrate images, finalize text placeholders, and fine-tune animations to create a cohesive user experience. The goal for this week is to make sure the website is both visually appealing and functional.
+Week 11 (Nov 11 - Nov 15) I will focus on refining the layout and enhancing visual effects. I will integrate images, finalize text placeholders, and fine-tune animations to create a cohesive user experience. The goal for this week is to make sure the website is both visually appealing and functional.
 
-Week 12 (Nov 18 - Nov 22) will prioritize accessibility and optimization. I’ll ensure the website is accessible, responsive, and optimized for various devices. After testing for high contrast and proper navigation, I’ll refine the design for ease of use.
+Week 12 (Nov 18 - Nov 22) I will prioritize accessibility and optimization. I will use this time to make sure the website is accessible, responsive, and optimized for different devices (e.g., screen readers, etc). After testing for high contrast and proper navigation, I will refine the design for any elements I missed.
 
-Week 13 (Nov 25 - Nov 29): will be dedicated to final adjustments, incorporating feedback, polishing the design.  
+Week 13 (Nov 25 - Nov 29): I will use this week for final adjustments, incorporating feedback, and polishing the design.  
 
-Week 14 (Dec 2 - Dec 6): This final week will be for completing the final project documentation and any other associated materials. 
+Week 14 (Dec 2 - Dec 6): This week will be for completing the final project documentation and any other associated materials. 
 
 ### *Implementation Plan*
 
