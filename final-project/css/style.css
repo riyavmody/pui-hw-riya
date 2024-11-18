@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Quote Section */
+.quote-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    z-index: 2;
+}
+
+.quote-content {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Inria Serif', 'Times New Roman', serif;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+.author {
+    font-family: 'Apple SD Gothic Neo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-style: italic;
+    color: #888;
+    margin: 0;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+
+.scroll-arrow {
+    position: absolute;
+    bottom: 30px;
+    color: #fff;
+    font-size: 1.5rem;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Story Section */
+.story-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.story-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    z-index: 2;
+}
+
+.story-content {
+    max-width: 450px;
+    padding-left: 8%;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Inria Serif', 'Times New Roman', serif;
+    color: #fff;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.story-text p {
+    font-family: 'Apple SD Gothic Neo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 2;
+    color: #fff;
+    letter-spacing: 0.02em;
+}
+
+/* Angels on Stage Section */
+.aos-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10vh;
+}
+
+.aos-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.aos-logo {
+    width: 400px; /* Increased from 250px to 400px */
+    margin-bottom: 20px;
+}
+
+.aos-tagline {
+    font-family: 'Inria Serif', 'Times New Roman', serif;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 0;
+}
+
+.aos-image-container {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+}
+
+.aos-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swirl-left, .swirl-right {
+    position: absolute;
+    width: 150px;
+    z-index: 3;
+}
+
+.swirl-left {
+    top: -50px;
+    left: -50px;
+    transform: rotate(180deg);
+}
+
+.swirl-right {
+    bottom: -50px;
+    right: -50px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    .story-content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        max-width: 90%;
+    }
+    
+    .story-text p {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .aos-logo {
+        width: 500; /* Increased from 200px to 300px for mobile */
+    }
+
+    .aos-tagline {
+        font-size: 1rem;
+    }
+
+    .aos-image-container {
+        width: 90%;
+    }
+
+    .swirl-left, .swirl-right {
+        width: 100px;
+    }
+
+    .swirl-left {
+        top: -30px;
+        left: -30px;
+    }
+
+    .swirl-right {
+        bottom: -30px;
+        right: -30px;
+    }
+}

@@ -108,7 +108,8 @@ Document the usage logs (prompts and chat history links) for the GenAI tools you
 # **FP3 \- Final Project Check-in**
 
 Document the changes and progress of your project. How have you followed or changed your implementation & GenAI use plan and why? Remember to commit your code to save your progress.
-
+https://ig.ft.com/generative-ai/
+https://www.nytimes.com/interactive/2022/01/21/opinion/roe-v-wade-abortion-history.html 
 ## Implementation Plan Updates
 
 - [ ] ...
