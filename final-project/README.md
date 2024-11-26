@@ -116,7 +116,8 @@ https://www.nytimes.com/interactive/2022/01/21/opinion/roe-v-wade-abortion-histo
 
 ## Generative AI Use Plan Updates
 
-- [ ] ...
+- [ ] Used to make suggestions about how to make the website more accessible (suggested to me to use rem instead of px for screen size, add semantic section labels - h2, etc)
+- [ ] Used to import font library used in Figma  
 
 Remember to keep track of your prompts and usage for [FP4 writeup](#part-6-generative-ai-use-and-reflection).
 
