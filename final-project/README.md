@@ -1,9 +1,3 @@
-<mark>**Note that this document order from FP4 -> FP1**</mark>
-
-<mark>Please sign up for the study</mark> at [https://tinyurl.com/pui-study](https://tinyurl.com/pui-study) to allow us to use your submission to create a better GenAI assistant for designers!
-
----
-
 # **FP4 \- Final Project Writeup**
 
 Feel free to refer to this [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) to make your writeup more organized, and you can preview your markdown file in VSCode [Markdown editing with Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview). 
@@ -13,10 +7,14 @@ Feel free to refer to this [Markdown Cheat Sheet](https://www.markdownguide.org/
 
 Describe your website (300 words).
 
-* What is the purpose of your website?   
-* Who is the target audience?  
+* What is the purpose of your website?
+	The primary purpose of my website is to give users a brief glimpse into my work and skills as an emerging professional in the HCI space. Beyond that, I want to use this platform to showcase the journey that led me to UX research, specifically what makes me so passionate about the assistive technology space. 
+* Who is the target audience?    	
+  The user group is not limited to recruiters and hiring managers, but also includes peers and individuals who are exploring HCI as a career pathway. For recruiters, the site serves as a high-level “About Me” website that outlines some of my technical and research skills, while for HCI explorers, it offers a transparent look into the process of breaking into the field. 
 * What information do you convey with your website?   
-* How is it interesting and engaging? 
+  The goal is for every user to walk away with a clear understanding of my passion for inclusive design and the depth of my research-driven, creative approach to problem-solving in the assistive technology space. By incorporating the impact of volunteer experiences like Angels on Stage, I hope to illustrate that my journey to HCI was intentional and that I have had a clear trajectory towards UXR, even when I did not know it. 
+* How is it interesting and engaging?
+	To make my website interesting and engaging, I leveraged a visual storytelling format which gives the site a polished feel that aligns with modern web design trends. The site is also unique in that it tells a story while guiding attention to pertinent information by only presenting bits and pieces at a time. In order to move on to the next section of the story, users need to scroll through the whole section. To give the site some movement, I incorporated a bouncing arrow on the landing page that allows users to jump to the next section but also holds semantic information to communicate that they need to scroll down for more information. I also added parallax styling to the swirl elements so that they move as the user scrolls. This reduced fatigue for me as I read through a NY Times article, which is where I pulled inspiration from. Finally, I think I succeeded at bringing a personal touch to the site that gives users insight into my personal style and work ethic. 
 
 ## Part 2: User Interaction
 
@@ -61,8 +59,6 @@ For the following aspects of your project, edit the corresponding table cell to 
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
 | Tool1 | Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
 | Tool1 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
-| Tool2| Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool2 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
 
 
 ### Usage Reflection
@@ -100,26 +96,31 @@ For the following aspects of your project, edit the corresponding table cell to 
 
 Document the usage logs (prompts and chat history links) for the GenAI tools you used. Some tools may not have an easy way to share usage logs, just try your best! Some instructions for different tools:
 
-1. [ChatGPT](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) / [Gemini](https://support.google.com/gemini/answer/13743730?hl=en&co=GENIE.Platform%3DDesktop): share the anonymous link to all of your chat histories relevant to this project
+1. Perplexity: 
+  - [Perplexity](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) / [Gemini](https://support.google.com/gemini/answer/13743730?hl=en&co=GENIE.Platform%3DDesktop): share the anonymous link to all of your chat histories relevant to this project
 2. [GitHub Copilot (VSCode)](https://code.visualstudio.com/docs/copilot/copilot-chat#:~:text=You%20can%20export%20all%20prompts%20and%20responses%20for%20a%20chat%20session%20in%20a%20JSON%20file%20with%20the%20Chat%3A%20Export%20Session...%20command%20(workbench.action.chat.export)%20in%20the%20Command%20Palette.): export chat histories relevant to this project.
+
+## Part 7: External Resources 
+I added this section to note any external references I used 
+- Learning how to use keyframes: [Link](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
+- Learning how to position images [Link](https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit) 
 
 ---
 
 # **FP3 \- Final Project Check-in**
 
 Document the changes and progress of your project. How have you followed or changed your implementation & GenAI use plan and why? Remember to commit your code to save your progress.
-https://ig.ft.com/generative-ai/
-https://www.nytimes.com/interactive/2022/01/21/opinion/roe-v-wade-abortion-history.html 
+
 ## Implementation Plan Updates
 
-- [ ] ...
+- [X]I used the following websites for inspiration on the changes I wanted to make based on feedback from my usability test.  
+  - [Visual storytelling article inspiration](https://ig.ft.com/generative-ai/)
+  - [Parallax scrolling inspiration](https://www.nytimes.com/interactive/2022/01/21/opinion/roe-v-wade-abortion-history.html) 
 
 ## Generative AI Use Plan Updates
 
-- [ ] Used to make suggestions about how to make the website more accessible (suggested to me to use rem instead of px for screen size, add semantic section labels - h2, etc)
-- [ ] Used to import font library used in Figma  
-
-Remember to keep track of your prompts and usage for [FP4 writeup](#part-6-generative-ai-use-and-reflection).
+- [X] I used Perplexity to make suggestions on how to make the website more accessible (it suggested to me to use rem instead of px for screen size, add semantic section labels like h2, etc.)
+- [X] I was not sure how to import the font I used when I was designing in Figma, so I used Perplexity to tell me how to import the same font.
 
 ---
 
