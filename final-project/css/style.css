@@ -209,19 +209,21 @@ p {
     position: absolute;
     width: 150px;
     z-index: 3;
+    transition: transform 0.1s ease-out;
 }
 
 /* Specifying position of left swirl */
 .swirl-left {
     top: -50px;
     left: -50px;
-    transform: rotate(180deg);
+    transform: rotate(180deg) translateY(0);
 }
 
 /* Specifying position of right swirl */
 .swirl-right {
     bottom: -20px;
     right: -150px;
+    transform: translateY(0);
 }
 
 /* Styling for the text in the AoS section */
