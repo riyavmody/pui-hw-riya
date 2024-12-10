@@ -394,7 +394,7 @@ p {
         flex-direction: column;
     }
 
-    #sailor-image, #orb-image {
+    #sailor-image, #aos-image, #orb-image {
         width: 100%;
     }
 
@@ -407,7 +407,11 @@ p {
     }
 
     .rotate {
-        display: none;
+        left: 50%;
+        bottom: -100%;
+        transform: translateX(-70%) rotate(-120deg);
+        width: 100%;
+        height: auto;    
     }
 
     .dashboard-container {
