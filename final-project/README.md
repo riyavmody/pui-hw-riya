@@ -194,28 +194,28 @@ Week 14 (Dec 2 - Dec 6): This week will be for completing the final project docu
 
 - [ ] Week 10 Nov 4 \- Nov 8:   
   - [X] FP2 due
-  - [ ] Finalize design
-  - [ ] Start experimenting with JavaScript libraries and coding basic functionality
-  - [ ] Begin implementing simple parallax animations and text effects for testing
+  - [X] Finalize design
+  - [X] Start experimenting with JavaScript libraries and coding basic functionality
+  - [X] Begin implementing simple parallax animations and text effects for testing
 
-- [ ] Week 11 Nov 11 \- Nov 15:
-  - [ ] Refine website layout and incorporate images
-  - [ ] Finalize text placeholders and animations
-  - [ ] Ensure the website is visually appealing and functional
+- [X] Week 11 Nov 11 \- Nov 15:
+  - [X] Refine website layout and incorporate images
+  - [X] Finalize text placeholders and animations
+  - [X] Ensure the website is visually appealing and functional
 
-- [ ] Week 12 Nov 18 \- Nov 22:   
-  - [ ] Prioritize accessibility features (e.g., contrast, ARIA labels, navigation)
-  - [ ] Ensure the website is responsive and optimized for various devices
-  - [ ] Refine design for ease of use and test functionality
+- [X] Week 12 Nov 18 \- Nov 22:   
+  - [X] Prioritize accessibility features (e.g., contrast, ARIA labels, navigation)
+  - [X] Ensure the website is responsive and optimized for various devices
+  - [X] Refine design for ease of use and test functionality
  
-- [ ] Week 13 Nov 25 \- Nov 29:  
-  - [ ] Incorporate feedback and finalize any remaining design changes
-  - [ ] Conduct final optimization and debugging
-  - [ ] Thanksgiving  
+- [X] Week 13 Nov 25 \- Nov 29:  
+  - [X] Incorporate feedback and finalize any remaining design changes
+  - [X] Conduct final optimization and debugging
+  - [X] Thanksgiving  
  
-- [ ] Week 14 Dec 2 \- Dec 6:  
-  - [ ] Complete final project documentation and associated materials
-  - [ ] FP4 due
+- [X] Week 14 Dec 2 \- Dec 6:  
+  - [X] Complete final project documentation and associated materials
+  - [X] FP4 due
 
 ### *Libraries and Other Components*
 
@@ -232,7 +232,7 @@ I do not plan to use AI for creating core functionality in my website. I believe
 
 * Figma: design prototyping
   * GenAI for tutorials on how to achieve certain designs because I am new to Figma 
-* NY Times: parallax scrolling inspiration 
+* NY Times: parallax scrolling inspiration (https://www.nytimes.com/interactive/2022/01/21/opinion/roe-v-wade-abortion-history.html)
 * Github: version control 
 * JS libraries: enable easy development of parallax scrolling and animations
   * GenAI for debugging code 
