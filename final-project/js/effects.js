@@ -12,19 +12,24 @@ document.addEventListener('DOMContentLoaded', function() {
   
     // Parallax effect for swirls
     window.addEventListener('scroll', () => {
-      const rect = aosSection.getBoundingClientRect();
-      const scrollPosition = window.pageYOffset;
-      const sectionTop = rect.top + scrollPosition;
-      const sectionBottom = rect.bottom + scrollPosition;
-      const viewportHeight = window.innerHeight;
-  
-      if (scrollPosition + viewportHeight > sectionTop && scrollPosition < sectionBottom) {
-        const relativeScroll = scrollPosition - sectionTop;
-        const speed = 0.5;
-  
-        swirlLeft.style.transform = `rotate(180deg) translateY(${relativeScroll * speed}px)`;
-        swirlRight.style.transform = `translateY(-${relativeScroll * speed}px)`;
+      if (window.innerWidth > 768) { // Only apply parallax on larger screens
+        const rect = aosSection.getBoundingClientRect();
+        const scrollPosition = window.pageYOffset;
+        const sectionTop = rect.top + scrollPosition;
+        const sectionBottom = rect.bottom + scrollPosition;
+        const viewportHeight = window.innerHeight;
+    
+        if (scrollPosition + viewportHeight > sectionTop && scrollPosition < sectionBottom) {
+          const relativeScroll = scrollPosition - sectionTop;
+          const speed = 0.5;
+    
+          swirlLeft.style.transform = `rotate(180deg) translateY(${relativeScroll * speed}px)`;
+          swirlRight.style.transform = `translateY(-${relativeScroll * speed}px)`;
+        }
+      } else {
+        // Reset transform for mobile
+        swirlLeft.style.transform = 'rotate(180deg)';
+        swirlRight.style.transform = 'none';
       }
     });
-  });
-  
+});

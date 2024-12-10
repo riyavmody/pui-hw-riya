@@ -90,7 +90,7 @@ h2{
 p {
     font-family: 'Apple SD Gothic Neo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     margin-bottom: 4rem;
-    font-size: rem;
+    font-size: 1rem;
     line-height: 2;
     color: #fff;
     letter-spacing: 0.02em;
@@ -143,7 +143,7 @@ p {
 
 /* Adjusting text of section to be next to section image (sailor) */
 .flex-right {
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
@@ -165,6 +165,13 @@ p {
     width: 100%;
     overflow: hidden;
     position: relative;
+}
+
+#p5-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 /* Styling tagline */
@@ -242,15 +249,6 @@ p {
 }
 
 /* Styling headshot image */
-/* #me {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    object-position: 10% 0;
-    transform: translateX(-10%);
-} */
-
 #me { 
     position: absolute;
     width: 100%;
@@ -370,4 +368,71 @@ p {
 /* Job title alignment */
 .job-title {
     text-align: right;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .intro-content, .right-content, .left-content, .hci-content-right {
+        max-width: 90%;
+        padding: 0 5%;
+        text-align: center;
+    }
+
+    .flex-right {
+        flex-direction: column;
+    }
+
+    #sailor-image, #orb-image {
+        width: 100%;
+    }
+
+    .aos-description {
+        width: 90%;
+    }
+
+    .conclusion-text {
+        max-width: 90%;
+    }
+
+    .rotate {
+        display: none;
+    }
+
+    .dashboard-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    #arrow {
+        font-size: 1rem;
+    }
+
+    .swirl-left, .swirl-right {
+        width: 100px;
+    }
 }
