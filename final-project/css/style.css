@@ -241,15 +241,14 @@ p {
 /* Styling headshot image */
 #me {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: 100vh;
     object-fit: cover;
 }
 
 /* Styling research section */
 .research-section {
     width: 100%;
-    height: 100vh;
     overflow: hidden;
     position: relative;
 }
@@ -262,7 +261,6 @@ p {
 /* Styling analytics section */
 .analytics-section {
     width: 100%;
-    height: 100vh;
     overflow: hidden;
     position: relative;
 }
@@ -300,14 +298,47 @@ p {
 /* Styling conclusion section */
 .conclusion-section {
     width: 100%;
-    height: 100vh;
     overflow: hidden;
     position: relative;
 }
 
-#cmu {
-    width: 100%;
+/* Styling CMU image */
+.cmu {
+    max-width: 80%;
+    height: auto;
 }
 
+/* Container with CMU image and arrow */
+.cmu-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
 
+/* Arrow positioning */
+.rotate {
+    position: absolute;
+    left: -100px;
+    bottom: -900px;
+    transform: rotate(-120deg);
+    width: 1300px;
+    height: 1300px;
+}
 
+/* Conclusion statement */
+.conclusion-text {
+    max-width: 50%;
+    text-align: center;
+}
+
+/* Aligning vertically */
+.column-alignment { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Job title alignment */
+.job-title {
+    text-align: right;
+}
