@@ -13,7 +13,7 @@
     <div class="container"> <!-- Entire body --> 
 
         <!-- Hook (Quote) --> 
-        <section id="quote-section"> 
+        <section class="quote-section"> 
             <div id="quote-content"> 
                 <h1>"Awiyah?"</h1>
                 <p id="quote-name">- Jet Robins</p>
@@ -28,7 +28,7 @@
         </div>
 
        <!-- Intro (Jet Story) -->
-        <section id="intro"> 
+        <section class="intro-section"> 
             <img id="intro-image" src="./images/aos images/Aladin_February_128-X2.jpg" alt="A young boy in a gold robe dressed like Aladdin standing next to a volunteer who is a girl dressed in black holding a book.">
             <div id="overlay">
                 <div id="intro-content">
@@ -47,30 +47,34 @@
         </div>
 
         <!-- Why UXR -->
-        <section> 
+        <section class="uxr-section"> 
             <div class="flex-right">
                 <img id="sailor-image" src="./images/aos images/sailor.png" alt="A young boy in a sailor's costume has his arm raised in a fist. He is sitting between three volunteers dressed in black. The volunteers are all female and the one sitting next to the boy is fixing his costume.">
-                <div class="left-content" id="blue-hover">
+                <div class="right-content" id="blue-hover">
                     <h2>Why UXR?</h2>
                     <p>Jet is the reason I am who I am today and why I want to be a <span class="highlight">UX Researcher</span> working within the <span class="highlight">assistive technology</span> space.</p>
                 </div>
             </div>
         </section>
+        
+        <div class="black-section">
+            <!-- To create black spacing between sections-->
+        </div>
 
         <!-- AoS Description -->    
-        <section> 
-            <div class="aos-section">
+        <section class="aos-section"> 
+            <div class="aos-flex">
                 <div class="aos-content">
                     <img id="aos-logo" src="./images/aos images/logo.png" alt="Angels on Stage Logo">
                     <p class="aos-tagline">Illuminating Abilities since 2008</p>
                 </div>
                 <div class="aos-image-container">
-                    <img src="./images/aos images/_X0A9327-X2.jpg" alt="Angels on Stage Performance">
+                    <img src="./images/aos images/_X0A9327-X2.jpg" alt="Angels on Stage performance with three girls on stage, two of the little girls are wearing glasses and the older girl is a volunteer wearing all black while smiling and clapping.">
                     <img class="swirl-left" src="./images/aos images/swirl.png" alt="White decorative swirl">
                     <img class="swirl-right" src="./images/aos images/swirl.png" alt="White decorative swirl">
                 </div>
+                <p class="aos-description">Angels on Stage is a nonprofit organization where people with special needs show off their talents through musical theater. Whether that's teaching them a dance or helping them press a button on a tablet that speaks their line, we are there solely to illuminate their abilities.</p>
             </div>
-            <p>Angels on Stage is a nonprofit organization where people with special needs show off their talents through musical theater. Whether that's teaching them a dance or helping them press a button on a tablet that speaks their line, we are there solely to illuminate their abilities.</p>
         </section>
 
         <div class="black-section">
@@ -78,7 +82,7 @@
         </div>
         
         <!-- Undergrad to HCI -->
-        <section> 
+        <section class="hci-section"> 
             <img id="me" src="./images/aos images/3 Riya Mody.jpeg" alt="A woman with black hair and a grey vest smiling in a headshot with a green background.">
             <div>
                 <h2>My Journey to HCI</h2>
@@ -91,20 +95,27 @@
         </div>
             
         <!-- Research -->
-        <section> 
-            <img src="./images/aos images/research.png" alt="A group of people, one in a wheelchair, three sitting, and one standing facing a screen with a yellow orb on it.">
-            <div>
-                <h2>My Love for Research</h2>
-                <p> As an Undergraduate Research Assistant in Dr. LouAnne Boyd’s lab, I explored data science in the wild, investigating how to alter visual perception in individuals with Autism. I stepped outside my comfort zone, learning to architect databases, perform image processing in Python, and model data in R. This effort culminated in a peer-reviewed journal article. By senior year, I had mastered these skills, so Dr. Boyd and I launched an empirical research study to advance our published work. Over a year, we designed the study, ran participants, and analyzed findings, while ensuring ethical practices and accommodating each participant's unique accessibility needs. </p>
+        <section class="research-section"> 
+            <div class="flex-right">
+                <img id="orb-image" src="./images/aos images/research.png" alt="A group of people, one in a wheelchair, three sitting, and one standing facing a screen with a yellow orb on it.">
+                <div class="right-content">
+                    <h2>My Love for Research</h2>
+                    <p> As an Undergraduate Research Assistant in Dr. LouAnne Boyd’s lab, I explored data science in the wild, investigating how to alter visual perception in individuals with Autism. I stepped outside my comfort zone, learning to architect databases, perform image processing in Python, and model data in R. This effort culminated in a peer-reviewed journal article. By senior year, I had mastered these skills, so Dr. Boyd and I launched an empirical research study to advance our published work. Over a year, we designed the study, ran participants, and analyzed findings, while ensuring ethical practices and accommodating each participant's unique accessibility needs. </p>
+                </div>
             </div>
         </section>
             
         <!-- Data Analytics -->
-        <section> 
-            <img src="./images/aos images/dashboard.png" alt="A decoriative image of a dashboard with various metrics and visualizations on it.">
-            <div>
-                <h2>The Numbers</h2>
-                <p> In my industry work, I centered technology design around users. As a Data Analyst on an agile team, I used informal UX research methods—interviews, task analysis, and prototype testing—to enhance dashboard analytics. By redesigning the information architecture and coding the back end, I streamlined an over-engineered dashboard into an intuitive data story, boosting adoption by 50%. Conversations and shadowing with sales managers, salespeople, and business leaders informed a redesign that aligned the tool with their priorities while delivering actionable insights. </p>
+        <section class="analytics-section"> 
+            <div class="flex-right">
+                <div class="left-content">
+                    <h2>The Numbers</h2>
+                    <p> In my industry work, I centered technology design around users. As a Data Analyst on an agile team, I used informal UX research methods—interviews, task analysis, and prototype testing—to enhance dashboard analytics. By redesigning the information architecture and coding the back end, I streamlined an over-engineered dashboard into an intuitive data story, boosting adoption by 50%. Conversations and shadowing with sales managers, salespeople, and business leaders informed a redesign that aligned the tool with their priorities while delivering actionable insights. </p>
+                </div>
+                <div class="dashboard-container">
+                    <img id="dashboard-image" src="./images/aos images/dashboard.png" alt="A decorative image of a dashboard with various metrics and visualizations on it.">
+                    <div class="dashboard-overlay"></div>
+                </div>
             </div>
         </section>
 
@@ -113,8 +124,8 @@
         </div>
 
         <!-- Conclusion (CMU to MM UXR) -->
-        <section> 
-            <img src="./images/aos images/cmu.png" alt="A woman standing behind a big CMU sign in red letters.">
+        <section class="conclusion-section"> 
+            <img id="cmu" src="./images/aos images/cmu.png" alt="A woman standing behind a big CMU sign in red letters.">
             <div>
                 <img src="./images/aos images/arrow.png" alt="White decorative arrow">
                 <p> Mixed Methods </p>

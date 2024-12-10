@@ -1,7 +1,5 @@
 /* Specifying body style (background color, text color, etc) */
 body {
-    margin: 0;
-    padding: 0;
     background-color: #000;
     color: #fff;
     line-height: 1.6;
@@ -15,20 +13,16 @@ body {
     padding: 0;
 }
 
-/* Specifying the height and width for each section */
-section { 
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-}
-
 /* Adjusting height and width of hook section */
-#quote-section { 
+.quote-section { 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
 /* Centering content in the quote */
@@ -95,11 +89,19 @@ h2{
 /* Using Google API font for paragraphs */
 p {
     font-family: 'Apple SD Gothic Neo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
+    margin-bottom: 4rem;
+    font-size: rem;
     line-height: 2;
     color: #fff;
     letter-spacing: 0.02em;
+}
+
+/* Styling intro section */
+.intro-section{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
 /* Styling intro image */
@@ -127,6 +129,13 @@ p {
     text-align: left;
 }
 
+/* Styling why UXR section */
+.uxr-section{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
 /* Styling sailor image */
 #sailor-image {
    width: 60%;
@@ -139,7 +148,7 @@ p {
 }
 
 /* Adjusting text in Why UXR section to be a specific width and aligning text */
-.left-content {
+.right-content {
     max-width: 450px;
     padding-left: 8%;
     text-align: right;
@@ -149,6 +158,13 @@ p {
 #blue-hover:hover .highlight {
     color: #007AFF;
     font-weight: bold;
+}
+
+/* Styling aos section */
+.aos-section{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 /* Styling tagline */
@@ -164,7 +180,7 @@ p {
 }
 
 /* Adjusting alignment */
-.aos-section {
+.aos-flex {
     position: relative;
     width: 100%;
     display: flex;
@@ -186,7 +202,6 @@ p {
     position: relative;
     width: 80%;
     max-width: 1200px;
-    height: 400px;
 }
 
 /* Specifying position of both swirls relative to other elements */
@@ -205,6 +220,94 @@ p {
 
 /* Specifying position of right swirl */
 .swirl-right {
-    bottom: -300px;
+    bottom: -20px;
     right: -150px;
 }
+
+.aos-description {
+    margin-top: 50px;
+    width: 60%;
+    text-align: center;
+}
+
+/* Styling hci section */
+.hci-section{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Styling headshot image */
+#me {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Styling research section */
+.research-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Styling orb image */
+#orb-image {
+    width: 60%;
+}
+
+/* Styling analytics section */
+.analytics-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Adjusting text in analytics to be a specific width and aligning text */
+.left-content {
+    max-width: 700px;
+    padding-left: 8%;
+    padding-right: 10%;
+    text-align: left;
+}
+
+/* Adding styles for a gradient overlay */
+.dashboard-container {
+    position: relative;
+    width: 50%;
+}
+
+/* Styling dashboard image */
+#dashboard-image {
+    width: 100%;
+    display: block;
+}
+
+/* Adding styles for a gradient overlay */
+.dashboard-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+}
+
+/* Styling conclusion section */
+.conclusion-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#cmu {
+    width: 100%;
+}
+
+
+
