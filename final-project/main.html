@@ -4,28 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Journey</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/test.css">
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap" rel="stylesheet">
     <script src="js/effects.js" defer></script>
 </head>
+
 <body>
-    <div class="container">
-        <section class="quote-section">
-            <div class="quote-content">
+    <div class="container"> <!-- Entire body --> 
+
+        <!-- Hook (Quote) --> 
+        <section id="quote-section"> 
+            <div id="quote-content"> 
                 <h1>"Awiyah?"</h1>
-                <p class="quote-name">– Jet Robins</p>
-            </div>
-            <div class="scroll-arrow">
-                <span>▼</span>
+                <p id="quote-name">- Jet Robins</p>
+            </div> 
+            <div>
+                <span id="arrow">▼</span>     
             </div>
         </section>
-        
-        <section class="story-section">
-            <img src="./images/aos images/Aladin_February_128-X2.jpg" alt="Story Image" class="story-image">
-            <div class="overlay">
-                <div class="story-content">
+
+        <div class="black-section">
+            <!-- To create black spacing between sections-->
+        </div>
+
+       <!-- Intro (Jet Story) -->
+        <section id="intro"> 
+            <img id="intro-image" src="./images/aos images/Aladin_February_128-X2.jpg" alt="A young boy in a gold robe dressed like Aladdin standing next to a volunteer who is a girl dressed in black holding a book.">
+            <div id="overlay">
+                <div id="intro-content">
                     <h2>An Unspoken Love Story</h2>
-                    <div class="story-text">
+                    <div>
                         <p>At the age of 15, a boy named Jet changed my life. He showed me my purpose: to advocate for those without a voice. Jet has Down Syndrome and he struggled to verbalize his love for others, but I never felt we needed words to communicate.</p>
                         <p>In the countless hours we spent together, Jet had never said my name; I wasn't sure he even knew who I was. But every game of catch we played, every book we read together, was a connection being built.</p>
                         <p>One day, he broke down his barriers and said, "Awiyah?" meaning Riya. Since that day, Jet remembers the name of every person he interacts with.</p>
@@ -34,17 +42,87 @@
             </div>
         </section>
 
-        <section class="aos-section">
-            <div class="aos-content">
-                <img src="./images/aos images/logo.png" alt="Angels on Stage Logo" class="aos-logo">
-                <p class="aos-tagline">Illuminating Abilities since 2008</p>
-            </div>
-            <div class="aos-image-container">
-                <img src="./images/aos images/_X0A9327-X2.jpg" alt="Angels on Stage Performance" class="aos-image">
-                <img src="./images/aos images/swirl.png" alt="Decorative Swirl" class="swirl-left">
-                <img src="./images/aos images/swirl.png" alt="Decorative Swirl" class="swirl-right">
+        <div class="black-section">
+            <!-- To create black spacing between sections-->
+        </div>
+
+        <!-- Why UXR -->
+        <section> 
+            <div class="flex-right">
+                <img id="sailor-image" src="./images/aos images/sailor.png" alt="A young boy in a sailor's costume has his arm raised in a fist. He is sitting between three volunteers dressed in black. The volunteers are all female and the one sitting next to the boy is fixing his costume.">
+                <div class="left-content" id="blue-hover">
+                    <h2>Why UXR?</h2>
+                    <p>Jet is the reason I am who I am today and why I want to be a <span class="highlight">UX Researcher</span> working within the <span class="highlight">assistive technology</span> space.</p>
+                </div>
             </div>
         </section>
+
+        <!-- AoS Description -->    
+        <section> 
+            <div class="aos-section">
+                <div class="aos-content">
+                    <img id="aos-logo" src="./images/aos images/logo.png" alt="Angels on Stage Logo">
+                    <p class="aos-tagline">Illuminating Abilities since 2008</p>
+                </div>
+                <div class="aos-image-container">
+                    <img src="./images/aos images/_X0A9327-X2.jpg" alt="Angels on Stage Performance">
+                    <img class="swirl-left" src="./images/aos images/swirl.png" alt="White decorative swirl">
+                    <img class="swirl-right" src="./images/aos images/swirl.png" alt="White decorative swirl">
+                </div>
+            </div>
+            <p>Angels on Stage is a nonprofit organization where people with special needs show off their talents through musical theater. Whether that's teaching them a dance or helping them press a button on a tablet that speaks their line, we are there solely to illuminate their abilities.</p>
+        </section>
+
+        <div class="black-section">
+            <!-- To create black spacing between sections-->
+        </div>
+        
+        <!-- Undergrad to HCI -->
+        <section> 
+            <img id="me" src="./images/aos images/3 Riya Mody.jpeg" alt="A woman with black hair and a grey vest smiling in a headshot with a green background.">
+            <div>
+                <h2>My Journey to HCI</h2>
+                <p> Being part of these beautiful “Angel moments” illuminated a path towards applied behavioral analysis therapy, or so I thought. It wasn’t until halfway through my undergraduate studies, that I discovered the world of technology. I learned about the power of visual storytelling through analytics and how data can reveal insights that would normally elude the naked eye. I began building my skills in coding, statistics, and even advanced modeling.</p>
+            </div>
+        </section>
+
+        <div class="black-section">
+            <!-- To create black spacing between sections-->
+        </div>
+            
+        <!-- Research -->
+        <section> 
+            <img src="./images/aos images/research.png" alt="A group of people, one in a wheelchair, three sitting, and one standing facing a screen with a yellow orb on it.">
+            <div>
+                <h2>My Love for Research</h2>
+                <p> As an Undergraduate Research Assistant in Dr. LouAnne Boyd’s lab, I explored data science in the wild, investigating how to alter visual perception in individuals with Autism. I stepped outside my comfort zone, learning to architect databases, perform image processing in Python, and model data in R. This effort culminated in a peer-reviewed journal article. By senior year, I had mastered these skills, so Dr. Boyd and I launched an empirical research study to advance our published work. Over a year, we designed the study, ran participants, and analyzed findings, while ensuring ethical practices and accommodating each participant's unique accessibility needs. </p>
+            </div>
+        </section>
+            
+        <!-- Data Analytics -->
+        <section> 
+            <img src="./images/aos images/dashboard.png" alt="A decoriative image of a dashboard with various metrics and visualizations on it.">
+            <div>
+                <h2>The Numbers</h2>
+                <p> In my industry work, I centered technology design around users. As a Data Analyst on an agile team, I used informal UX research methods—interviews, task analysis, and prototype testing—to enhance dashboard analytics. By redesigning the information architecture and coding the back end, I streamlined an over-engineered dashboard into an intuitive data story, boosting adoption by 50%. Conversations and shadowing with sales managers, salespeople, and business leaders informed a redesign that aligned the tool with their priorities while delivering actionable insights. </p>
+            </div>
+        </section>
+
+        <div class="black-section">
+            <!-- To create black spacing between sections-->
+        </div>
+
+        <!-- Conclusion (CMU to MM UXR) -->
+        <section> 
+            <img src="./images/aos images/cmu.png" alt="A woman standing behind a big CMU sign in red letters.">
+            <div>
+                <img src="./images/aos images/arrow.png" alt="White decorative arrow">
+                <p> Mixed Methods </p>
+                <p> User Experience Researcher </p>
+                <p>I am eager to continue learning and challenging myself, stepping outside my comfort zone to deeply explore the complex interactions between people and technology. As a graduate of Carnegie Mellon’s Human-Computer Interaction program, I will be equipped with the skills and perspective needed to drive innovation in accessibility technology. My goal is to be a passionate advocate for individuals like Jet, empowering them to unlock their full potential and ensuring their voices are truly heard.</p>
+            </div>
+        </section>
+   
+    <!-- End of entire body -->
     </div>
 </body>
-</html>

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const scrollArrow = document.querySelector('.scroll-arrow');
-    const storySection = document.querySelector('.story-section');
+    const scrollArrow = document.querySelector('#arrow');
+    const storySection = document.querySelector('#intro');
     
     // Smooth scroll for arrow
     scrollArrow.addEventListener('click', () => {
