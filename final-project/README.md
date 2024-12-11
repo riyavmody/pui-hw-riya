@@ -29,17 +29,26 @@ How a user would interact with your website? For each step, briefly but clearly 
 Describe what important external tool you used (JavaScript library, Web API, animations, or other). Following the bulleted list format below, reply to each of the prompts.
 
 1. Font API
-  * Why did you choose to use it over other alternatives? I chose to incorporate this font API because it provided a broad range of options that supported the site’s storytelling aesthetic better than a built-in font. I also wanted the final product to match the Figma design prototype as closely as possible. 
-  * How you used it? I imported the web font from Google Fonts into the webpage by adding it as I would a CSS file in the HTML. I leveraged the font to make the headers stand out more and the text match the Figma prototype. 
-  * What does it add to your website? The font enhances the visual appeal of the site and establishes a clear typographic hierarchy. This makes the site look and feel more modern as well as makes the content more readable. 
+  * Why did you choose to use it over other alternatives? 
+    - I chose to incorporate this font API because it provided a broad range of options that supported the site’s storytelling aesthetic better than a built-in font. I also wanted the final product to match the Figma design prototype as closely as possible. 
+  * How you used it? 
+    - I imported the web font from Google Fonts into the webpage by adding it as I would a CSS file in the HTML. I leveraged the font to make the headers stand out more and the text match the Figma prototype. 
+  * What does it add to your website? 
+    - The font enhances the visual appeal of the site and establishes a clear typographic hierarchy. This makes the site look and feel more modern as well as makes the content more readable. 
 2. Keyframes arrow animation
-  * Why did you choose to use it over other alternatives? The arrow animation was simple to implement and simple for users to interact with. It provides a universally understood visual cue for navigation, which many users I tested with greatly appreciated. 
-  * How you used it? I used CSS keyframes to animate the arrow with a subtle bounce effect that persists while the arrow is in the users’ field of view. I also leveraged JS to make it clickable so that users may use it to navigate to the next section.  
-  * What does it add to your website? The arrow animation draws attention to the interactive elements of the site which creates an intuitive guide for users to know which actions to take. It also provides movement on an otherwise static site. 
+  * Why did you choose to use it over other alternatives? 
+    - The arrow animation was simple to implement and simple for users to interact with. It provides a universally understood visual cue for navigation, which many users I tested with greatly appreciated. 
+  * How you used it? 
+    - I used CSS keyframes to animate the arrow with a subtle bounce effect that persists while the arrow is in the users’ field of view. I also leveraged JS to make it clickable so that users may use it to navigate to the next section.  
+  * What does it add to your website? 
+    - The arrow animation draws attention to the interactive elements of the site which creates an intuitive guide for users to know which actions to take. It also provides movement on an otherwise static site. 
 3. P5 js
-  * Why did you choose to use it over other alternatives? P5.js provided an easy way to create the parallax style I was interested in programming. It would have been harder to do this using regular JS and CSS. 
-  * How you used it? I used P5.js to animate the parallax effect shown in the swirls in the Angels on Stage section. The swirls are intended to move up and down based on the user’s scroll behavior. 
-  * What does it add to your website? I believe the parallax scrolling introduces an element of creativity in a website that is pretty polished and minimal. It elevates the user experience by making the storytelling more immersive. 
+  * Why did you choose to use it over other alternatives? 
+    - P5.js provided an easy way to create the parallax style I was interested in programming. It would have been harder to do this using regular JS and CSS. 
+  * How you used it? 
+    - I used P5.js to animate the parallax effect shown in the swirls in the Angels on Stage section. The swirls are intended to move up and down based on the user’s scroll behavior. 
+  * What does it add to your website? 
+    - I believe the parallax scrolling introduces an element of creativity in a website that is pretty polished and minimal. It elevates the user experience by making the storytelling more immersive. 
 
 ## Part 4: Design Iteration
 

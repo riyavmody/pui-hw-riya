@@ -152,6 +152,7 @@ p {
     max-width: 450px;
     padding-left: 8%;
     text-align: right;
+    padding-right: 8%;
 }
 
 /* Changing text to blue and bold on hover of big container */
@@ -209,6 +210,9 @@ p {
     position: relative;
     width: 80%;
     max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Specifying position of both swirls relative to other elements */
@@ -294,9 +298,9 @@ p {
 
 /* Adjusting text in analytics to be a specific width and aligning text */
 .left-content {
-    max-width: 700px;
+    max-width: 500px;
     padding-left: 8%;
-    padding-right: 10%;
+    padding-right: 5%;
     text-align: left;
 }
 
@@ -308,7 +312,8 @@ p {
 
 /* Styling dashboard image */
 #dashboard-image {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
     display: block;
 }
 
@@ -345,8 +350,8 @@ p {
 /* Arrow positioning */
 .rotate {
     position: absolute;
-    left: -100px;
-    bottom: -900px;
+    left: -400px;
+    bottom: -850px;
     transform: rotate(-120deg);
     width: 1300px;
     height: 1300px;
@@ -368,10 +373,11 @@ p {
 /* Job title alignment */
 .job-title {
     text-align: right;
+    padding-left: 350px;
 }
 
 /* Media queries for responsive design */
-@media (max-width: 768px) {
+@media (max-width: 1180px) {
     h1 {
         font-size: 2.5rem;
     }
@@ -394,8 +400,12 @@ p {
         flex-direction: column;
     }
 
-    #sailor-image, #aos-image, #orb-image {
+    #sailor-image, #orb-image {
         width: 100%;
+    }
+
+    .aos-image-container {
+        width: 80%;
     }
 
     .aos-description {
@@ -416,27 +426,5 @@ p {
 
     .dashboard-container {
         width: 90%;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 0.8rem;
-    }
-
-    #arrow {
-        font-size: 1rem;
-    }
-
-    .swirl-left, .swirl-right {
-        width: 100px;
     }
 }
