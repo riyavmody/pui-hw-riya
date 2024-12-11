@@ -20,18 +20,26 @@ Describe your website (300 words).
 
 How a user would interact with your website? For each step, briefly but clearly state the interaction type & how we should reproduce it.
 
-1. Interaction type. Click on X on page Y / scroll on page X, etc.  
-2. 
+1. User arrives on the landing page
+2. Users can either scroll down to view the next panel in the story or click a bouncing arrow that directs them to the next section. This provides an option for guided navigation while also encouraging exploration.
+3. Users continue to scroll through the site to experience a seamless, continuous narrative. As they progress, they encounter each integral part of my journey, presented in a way that encourages engagement and maintains interest. 
 
 ## Part 3: External Tool
 
 Describe what important external tool you used (JavaScript library, Web API, animations, or other). Following the bulleted list format below, reply to each of the prompts.
 
-1. Name of tool1  
-   * Why did you choose to use it over other alternatives? (2 sentences max)  
-   * How you used it? (2 sentences max)  
-   * What does it add to your website? (2 sentences max)  
-2. Name of tool2
+1. Font API
+  * Why did you choose to use it over other alternatives? I chose to incorporate this font API because it provided a broad range of options that supported the site’s storytelling aesthetic better than a built-in font. I also wanted the final product to match the Figma design prototype as closely as possible. 
+  * How you used it? I imported the web font from Google Fonts into the webpage by adding it as I would a CSS file in the HTML. I leveraged the font to make the headers stand out more and the text match the Figma prototype. 
+  * What does it add to your website? The font enhances the visual appeal of the site and establishes a clear typographic hierarchy. This makes the site look and feel more modern as well as makes the content more readable. 
+2. Keyframes arrow animation
+  * Why did you choose to use it over other alternatives? The arrow animation was simple to implement and simple for users to interact with. It provides a universally understood visual cue for navigation, which many users I tested with greatly appreciated. 
+  * How you used it? I used CSS keyframes to animate the arrow with a subtle bounce effect that persists while the arrow is in the users’ field of view. I also leveraged JS to make it clickable so that users may use it to navigate to the next section.  
+  * What does it add to your website? The arrow animation draws attention to the interactive elements of the site which creates an intuitive guide for users to know which actions to take. It also provides movement on an otherwise static site. 
+3. P5 js
+  * Why did you choose to use it over other alternatives? P5.js provided an easy way to create the parallax style I was interested in programming. It would have been harder to do this using regular JS and CSS. 
+  * How you used it? I used P5.js to animate the parallax effect shown in the swirls in the Angels on Stage section. The swirls are intended to move up and down based on the user’s scroll behavior. 
+  * What does it add to your website? I believe the parallax scrolling introduces an element of creativity in a website that is pretty polished and minimal. It elevates the user experience by making the storytelling more immersive. 
 
 ## Part 4: Design Iteration
 
