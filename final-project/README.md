@@ -56,10 +56,10 @@ Describe how you iterated on your prototypes, if at all, including any changes y
 
   The design and concept of my website changed at least 3 times: it started as re-designing a website for Angels on Stage, changed into a visual story about Angels on Stage and what the program is all about, and finally morphed into a personal portfolio piece (see the shift from prototype 1 and 2 in FP2 to the updated design in FP2). After receiving valuable feedback from my peers, I decided to focus on making the design a continuous scroll as opposed to multiple pages because I felt it suited the visual storytelling style better. As I shifted towards making a portfolio piece, I thought about how to showcase my journey to HCI and UXR, which I eventually segmented into 8 unique sections: 1. Hook (quote) 2. Intro to the story (An Unspoken Love Story) 3. What inspired me to pursue UXR (Why UXR) 4. About Angels on Stage 5. What inspired me to pursue HCI (My Journey to HCI) 6. My undergraduate research (My Love for Research) 7. My data analytics background (The Numbers) and 8. My mission and career aspirations. I wanted the imagery to be powerful, so I utilized the continuous scroll format with images that took up the whole viewport height to maintain attention on one segment of the story at a time. I also leveraged large serif titles and sans-serif body text to build a clear hierarchy that visually broke up the story segments. Ultimately, these design decisions culminated in a powerful visual story about my journey into UXR and assistive technology. 
 
-
 ## Part 5: Implementation Challenge
 
 What challenges did you experience in implementing your website? (2-4 sentences max)
+	The most challenging part of implementing this website was by far the JS functions to animate the arrow and create the parallax effect on the swirls. I did use GenAI to assist in these areas, which I will outline in the next section, but it was extremely eye-opening for me to learn how to accomplish something like this. Another extremely challenging part of this project was leveraging flexbox styling and z-indices to organize elements. 
 
 ## Part 6: Generative AI Use and Reflection
 
@@ -75,55 +75,66 @@ For the following aspects of your project, edit the corresponding table cell to 
 - *Usage*: Whether you used / did not use this tool for the aspect. Enter [Yes/No]
 - *Productivity*: Give a rating on whether this tool makes your productivity for X aspect [1-Much Reduced, 2-Reduced, 3-Slightly Reduced, 4-Not Reduced nor Improved, 5-Slightly Improved, 6-Improved, 7-Much Improved].
 
-| Tool Name | Ratings | design | plan | write code | debug | \_ (other?) |
-| :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Tool1 | Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool1 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
+| Tool Name | Ratings | design | plan | write code | debug |
+| :---- | :---- | :---- | :---- | :---- | :---- |
+| Perplexity | Usage | No | No | Yes | Yes |
+| Perplexity | Productivity | N/A | N/A | 5 | 7 |
+
+PLEASE NOTE: For this project, I *exclusively* used Perplexity and no other AI tools. I chose to use this platform because it is one of the only GenAI platforms whose premium version is available free of charge to us as students.   
 
 
 ### Usage Reflection
 
 > Impact on your design and plan 
-* It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
-* It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
-* GenAI tool did/did not influence my final design and implementation plan because … For example, 
-  1. Tool1: 
-  2. Tool2:
+* 	It matched my expectations and plan in FP2 in that I was able to use it for assistance on my JS for the parallax animations (P5.js). Those functions were extremely hard to wrap my head around so I tried my best at it and had Perplexity help me with the rest. This format actually encouraged me to learn because I was having more successes rather than failures, which is what would happen when I tried to do it without assistance.
+* It did not match my expectations and plan in FP2 in that I was expecting that Perplexity would be able to understand my use cases better. For example, I tried to explain what I wanted the code to do visually, but in the first few iterations, the system was unable to execute on the prompt. It actually animated a third swirl to parallax up instead of parallaxing the existing swirl up. 
+* Perplexity did not influence my final design at all because I spent a large proportion of time on this project in Figma doing the legwork. For example, I had three concepts which each built off one another and, at each step, I refined the content, iterated on the designs, and thought intentionally about information architecture. In terms of the implementation plan, I think there were times at which the use of GenAI sped up processes that I anticipated would take me longer, like the parallax animations. However, this time averaged out with the time I spent refining queries without GenAI, which kept my timeline on the implementation plan pretty static.   
+
 
 > Use patterns
-* I accepted the generations when …  For example, 
-  1. Tool1: this tool once suggested … and I adjusted my design according to the suggestion because … 
-  2. Tool2: 
-* I critiqued/evaluated the generated suggestions by … For example, 
-  1. Tool1: this tool once suggested … but I modified/rejected the suggestion because … 
-  2. Tool2: 
+* I accepted the generations that the system gave me only after I fully understood each line of code independently and how it would fit within my existing code. For example, Perplexity suggested that I set the width of an image in a media query to be 40% because I had asked it to help me style for mobile. I evaluated this suggestion by pasting the suggested line of code into my CSS file. I then modified it because I realized that style did not match what I expected from the mobile version. Eventually, I chose to use the CSS width property along with the percentage because I realized that was a clever way to style for responsiveness, but I did adjust the percentage to 100% based on my style preferences. There were other similar use cases where I had to modify or simply reject suggestions from Perplexity but, each time, I took the same approach. I made sure to understand what each line does, evaluate the effectiveness, and only use if it fits the expectations that I have of my code.
 
 
 > Pros and cons of using GenAI tools
 * Pros
-  1. Tool1: 
-  2. Tool2:
+  1. It was great at rapid problem solving for specific technical questions, like syntax errors or how to isolate specific elements when styling.
+  2. Useful for targeted fixes based on error messages, especially when writing JS functions 
+  3. Quick explanations for complex technical concepts. Often, Googling or going on Stack Overflow can be tedious and takes more time than simply asking GenAI.
+  4. Suggestions for optimization for accessibility or changing your code to be more accessible.
+  5. Sometimes the system will tell you what its sources were for generating the code, which you can click directly into. This is really helpful because you can actually read through that documentation to solve your issue.
+
 * Cons
-  1. Tool1: 
-  2. Tool2:
+  1. Sometimes it is just wrong and you are left to debug the code it suggested to you.  
+  2. Takes previous chat history and works it into what you are asking for now even when they are new chats. For example, it gives you the wrong information or does not do what you ask.
+  3. Sometimes it takes longer to type the prompt that it does to just code it yourself. 
+  4. In the case of Perplexity, the system shows you exactly what it is doing (e.g., surfing the web for x, y, z, generating code, etc.) which can be sensory overload if you are not interested in knowing how the system got to your answer. 
 
 
 ### Usage Log
 
 Document the usage logs (prompts and chat history links) for the GenAI tools you used. Some tools may not have an easy way to share usage logs, just try your best! Some instructions for different tools:
 
-1. Perplexity: 
-  - [Perplexity](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) / [Gemini](https://support.google.com/gemini/answer/13743730?hl=en&co=GENIE.Platform%3DDesktop): share the anonymous link to all of your chat histories relevant to this project
-2. [GitHub Copilot (VSCode)](https://code.visualstudio.com/docs/copilot/copilot-chat#:~:text=You%20can%20export%20all%20prompts%20and%20responses%20for%20a%20chat%20session%20in%20a%20JSON%20file%20with%20the%20Chat%3A%20Export%20Session...%20command%20(workbench.action.chat.export)%20in%20the%20Command%20Palette.): export chat histories relevant to this project.
+1. Debugging on-hover code (e.g., realizing I did not use a comma to change styling of a specific element inside a div) [Link](https://www.perplexity.ai/search/fix-this-selector-to-have-the-Yc0RbVZjRQqOP9FdFUBSUg)
+2. Figuring out how to hide the scroll bar at the bottom of the page [Link](https://www.perplexity.ai/search/specifying-body-style-backgrou-O1AqEMtLQHWUJBc3CJMCog)
+3. Instead of specifying a specific pixel height, Perplexity suggested I use vh and I set this to 100 so that it makes the element exactly as tall as the viewport. This was a great suggestion because it allows the height of a section to be dynamic for any device, which is central to my design (maintaining attention in a specific location to complete reading that part of the story).  
+4. I used rem instead of px for accessibility purposes and researched on Perplexity what aspect of accessibility that addresses. [Link](https://www.perplexity.ai/search/what-does-using-rem-instead-of-vsbUNXmBTQe1oAfBEfwepg) 
+5. Fixing images being warped [Link](https://www.perplexity.ai/search/why-is-this-image-squished-sty-tZ7UVo9jT3iswOgIs09Trg) 
+6. Adding overlay to image [Link](https://www.perplexity.ai/search/add-an-overlay-to-the-dashboar-KgobVLR2TaWWxryvtyulSg) 
+7. I attempted to write the parallax scroll function a few times over the course of a week or so but I was not able to get it, so Perplexity helped me implement it. 
+8. I asked for Perplexity Adjust for media queries (making it responsive to iPad). It gave me a baseline to work with and I tested to see whether it worked but there were some bugs, so I adjusted the queries as needed [Link](https://www.perplexity.ai/search/adjust-my-code-to-make-it-comp-Cfbg7JlIQK25038G5j7s0g). There were some images that were not showing on iPad, so I debugged with GenAI. [Link](https://www.perplexity.ai/search/the-arrow-and-aos-logo-are-not-98T_N81_Rgas047j3Ho5lQ)
 
 ## Part 7: External Resources 
-I added this section to note any external references I used 
+I added this section to note any external references I used (not comprehensive):
 - Learning how to use keyframes: [Link](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
 - Learning how to position images [Link](https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit) 
+- Learning how to position specific elements [Link](https://www.w3schools.com/css/css_positioning.asp)
+- Flexbox style references [Link](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- References to targeting nested elements in CSS styling [Link](https://stackoverflow.com/questions/10644778/targeting-nested-elements-with-css)
+- Parallax scrolling in P5.js [Link](https://editor.p5js.org/clt381/sketches/S1sZkQfOG)
+- Horizontal parallax scrolling tutorial [Link](https://www.youtube.com/watch?v=4Ud3oX-cKxc) 
+- Inspecting the inspiration website [Link](https://www.nytimes.com/interactive/2022/01/21/opinion/roe-v-wade-abortion-history.html)
+- Arrow animation [Link](https://www.geeksforgeeks.org/how-to-make-smooth-bounce-animation-using-css/)
+- CSS bounce animation [Link](https://www.tutorialspoint.com/css/css_animation_bounce.htm)
 
 ---
 
