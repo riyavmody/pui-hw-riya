@@ -54,6 +54,9 @@ Describe what important external tool you used (JavaScript library, Web API, ani
 
 Describe how you iterated on your prototypes, if at all, including any changes you made to your original design while you were implementing your website and the rationale for the changes. (4-8 sentences max)
 
+  The design and concept of my website changed at least 3 times: it started as re-designing a website for Angels on Stage, changed into a visual story about Angels on Stage and what the program is all about, and finally morphed into a personal portfolio piece (see the shift from prototype 1 and 2 in FP2 to the updated design in FP2). After receiving valuable feedback from my peers, I decided to focus on making the design a continuous scroll as opposed to multiple pages because I felt it suited the visual storytelling style better. As I shifted towards making a portfolio piece, I thought about how to showcase my journey to HCI and UXR, which I eventually segmented into 8 unique sections: 1. Hook (quote) 2. Intro to the story (An Unspoken Love Story) 3. What inspired me to pursue UXR (Why UXR) 4. About Angels on Stage 5. What inspired me to pursue HCI (My Journey to HCI) 6. My undergraduate research (My Love for Research) 7. My data analytics background (The Numbers) and 8. My mission and career aspirations. I wanted the imagery to be powerful, so I utilized the continuous scroll format with images that took up the whole viewport height to maintain attention on one segment of the story at a time. I also leveraged large serif titles and sans-serif body text to build a clear hierarchy that visually broke up the story segments. Ultimately, these design decisions culminated in a powerful visual story about my journey into UXR and assistive technology. 
+
+
 ## Part 5: Implementation Challenge
 
 What challenges did you experience in implementing your website? (2-4 sentences max)
